@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da574ce6-7eb9-408a-9d01-22dd99978fd3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TQxZ8WpSSJLqA0xjWZtpLtmclA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="day17" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="day12" />
+      <recent name="day07" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PrintNameWithOddIndexes">
+    <configuration name="FizzBuzzNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day16.FizzBuzzNumber" />
+      <module name="JavaProgrammingB15Online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NamePrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day17.NamePrinter" />
+      <module name="JavaProgrammingB15Online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintNameWithOddIndexes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day17.PrintNameWithOddIndexes" />
+      <module name="JavaProgrammingB15Online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubstringNameCorrector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day17.SubstringNameCorrector" />
+      <module name="JavaProgrammingB15Online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WhileLoopPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day17.WhileLoopPractice" />
+      <module name="JavaProgrammingB15Online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SubstringNameCorrector" />
+      <item itemvalue="Application.WhileLoopPractice" />
+      <item itemvalue="Application.FizzBuzzNumber" />
+      <item itemvalue="Application.NamePrinter" />
+      <item itemvalue="Application.PrintNameWithOddIndexes" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PrintNameWithOddIndexes" />
+        <item itemvalue="Application.NamePrinter" />
+        <item itemvalue="Application.FizzBuzzNumber" />
+        <item itemvalue="Application.WhileLoopPractice" />
+        <item itemvalue="Application.SubstringNameCorrector" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da574ce6-7eb9-408a-9d01-22dd99978fd3" name="Default Changelist" comment="" />
+      <created>1573406173060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573406173060</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="412" y="289" width="455" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575224497562">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state x="412" y="289" width="455" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575224497562" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom" timestamp="1575262287864">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575262287864" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400217" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124278" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333317" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center" timestamp="1575262287862">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575262287862" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400214" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124276" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333314" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left" timestamp="1575262287861">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575262287861" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400207" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124273" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333312" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right" timestamp="1575262287863">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575262287863" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400216" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124277" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333315" />
+    <state width="1238" height="262" key="GridCell.Tab.1.bottom" timestamp="1575225722840">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state width="1238" height="262" key="GridCell.Tab.1.bottom/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575225722840" />
+    <state width="1238" height="262" key="GridCell.Tab.1.center" timestamp="1575225722838">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state width="1238" height="262" key="GridCell.Tab.1.center/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575225722838" />
+    <state width="1238" height="262" key="GridCell.Tab.1.left" timestamp="1575225722838">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state width="1238" height="262" key="GridCell.Tab.1.left/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575225722838" />
+    <state width="1238" height="262" key="GridCell.Tab.1.right" timestamp="1575225722839">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state width="1238" height="262" key="GridCell.Tab.1.right/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575225722839" />
+    <state x="296" y="201" key="com.intellij.ide.util.TipDialog" timestamp="1575219167531">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state x="296" y="201" key="com.intellij.ide.util.TipDialog/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575219167531" />
+    <state x="296" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575147745834" />
+    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup" timestamp="1575258669356">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575258669356" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575154961985" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day02/VariableClass2.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day02/VariableClass2.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day08/WarmUp.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day14/EmailChecker.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaProgrammingB15Online$WarmUp16.ic" NAME="WarmUp16 Coverage Results" MODIFIED="1575134618160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>day16.*</FILTER>
+    </SUITE>
+  </component>
+</project>
