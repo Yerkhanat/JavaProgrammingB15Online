@@ -8,11 +8,13 @@ public class GiveMeFive {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the number");
-        int five = 0;
+        int five = input.nextInt();
         while (five != 5){
+
+                System.out.println("hey you didn't give me 5");
+
+            //System.out.println("Please enter the number");
             five = input.nextInt();
-            System.out.println("hey you didn't give me 5");
-            System.out.println("Please enter the number");
         }
 
         System.out.println("HIGH FIVE!!!!!!");

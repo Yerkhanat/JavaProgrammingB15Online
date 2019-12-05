@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da574ce6-7eb9-408a-9d01-22dd99978fd3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/repl/Repl064.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day06/CapturingMultipleWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day06/CapturingMultipleWord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day16/GiveMeFive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day16/GiveMeFive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day06/CapturingMultipleWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day06/CapturingMultipleWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day16/GiveMeFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day16/GiveMeFive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +32,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TQxZ8WpSSJLqA0xjWZtpLtmclA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -49,13 +57,13 @@
       <recent name="day07" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PrintNameWithOddIndexes">
-    <configuration name="FizzBuzzNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day16.FizzBuzzNumber" />
+  <component name="RunManager" selected="Application.PalindromeTest">
+    <configuration name="CheckCharacter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day19.CheckCharacter" />
       <module name="JavaProgrammingB15Online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day16.*" />
+          <option name="PATTERN" value="day19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NamePrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day17.NamePrinter" />
+    <configuration name="FindingTheCountOfSomething" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day19.FindingTheCountOfSomething" />
       <module name="JavaProgrammingB15Online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day17.*" />
+          <option name="PATTERN" value="day19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintNameWithOddIndexes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day17.PrintNameWithOddIndexes" />
+    <configuration name="PalindromeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day20.PalindromeTest" />
       <module name="JavaProgrammingB15Online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day17.*" />
+          <option name="PATTERN" value="day20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubstringNameCorrector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day17.SubstringNameCorrector" />
+    <configuration name="Repl091" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="repl.Repl091" />
       <module name="JavaProgrammingB15Online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day17.*" />
+          <option name="PATTERN" value="repl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WhileLoopPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day17.WhileLoopPractice" />
+    <configuration name="SumOfAllNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day19.SumOfAllNumbers" />
       <module name="JavaProgrammingB15Online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day17.*" />
+          <option name="PATTERN" value="day19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,19 +124,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SubstringNameCorrector" />
-      <item itemvalue="Application.WhileLoopPractice" />
-      <item itemvalue="Application.FizzBuzzNumber" />
-      <item itemvalue="Application.NamePrinter" />
-      <item itemvalue="Application.PrintNameWithOddIndexes" />
+      <item itemvalue="Application.SumOfAllNumbers" />
+      <item itemvalue="Application.FindingTheCountOfSomething" />
+      <item itemvalue="Application.CheckCharacter" />
+      <item itemvalue="Application.Repl091" />
+      <item itemvalue="Application.PalindromeTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrintNameWithOddIndexes" />
-        <item itemvalue="Application.NamePrinter" />
-        <item itemvalue="Application.FizzBuzzNumber" />
-        <item itemvalue="Application.WhileLoopPractice" />
-        <item itemvalue="Application.SubstringNameCorrector" />
+        <item itemvalue="Application.PalindromeTest" />
+        <item itemvalue="Application.Repl091" />
+        <item itemvalue="Application.CheckCharacter" />
+        <item itemvalue="Application.FindingTheCountOfSomething" />
+        <item itemvalue="Application.SumOfAllNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -162,75 +170,92 @@
       <screen x="0" y="0" width="1280" height="745" />
     </state>
     <state x="412" y="289" width="455" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575224497562" />
-    <state width="1238" height="262" key="GridCell.Tab.0.bottom" timestamp="1575263065938">
+    <state x="412" y="314" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1575510116431">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
-    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575262287864" />
-    <state width="1238" height="262" key="GridCell.Tab.0.bottom/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575263065938" />
+    <state x="412" y="314" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510116431" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom" timestamp="1575510526806">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510526806" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974497" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.745@0.0.1280.745" timestamp="1575443579032" />
     <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400217" />
     <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124278" />
     <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333317" />
-    <state width="1238" height="262" key="GridCell.Tab.0.center" timestamp="1575263065937">
+    <state width="1238" height="167" key="GridCell.Tab.0.center" timestamp="1575510526803">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
-    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575262287862" />
-    <state width="1238" height="262" key="GridCell.Tab.0.center/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575263065937" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510526803" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974493" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.745@0.0.1280.745" timestamp="1575443579030" />
     <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400214" />
     <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124276" />
     <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333314" />
-    <state width="1238" height="262" key="GridCell.Tab.0.left" timestamp="1575263065936">
+    <state width="1238" height="167" key="GridCell.Tab.0.left" timestamp="1575510526802">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
-    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575262287861" />
-    <state width="1238" height="262" key="GridCell.Tab.0.left/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575263065936" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510526802" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974491" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.745@0.0.1280.745" timestamp="1575443579029" />
     <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400207" />
     <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124273" />
     <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333312" />
-    <state width="1238" height="262" key="GridCell.Tab.0.right" timestamp="1575263065938">
+    <state width="1238" height="167" key="GridCell.Tab.0.right" timestamp="1575510526804">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
-    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575262287863" />
-    <state width="1238" height="262" key="GridCell.Tab.0.right/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575263065938" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510526804" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974495" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.745@0.0.1280.745" timestamp="1575443579031" />
     <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400216" />
     <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124277" />
     <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333315" />
-    <state width="1238" height="262" key="GridCell.Tab.1.bottom" timestamp="1575263065941">
+    <state width="1238" height="262" key="GridCell.Tab.1.bottom" timestamp="1575510411975">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
-    <state width="1238" height="262" key="GridCell.Tab.1.bottom/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575225722840" />
-    <state width="1238" height="262" key="GridCell.Tab.1.bottom/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575263065941" />
-    <state width="1238" height="262" key="GridCell.Tab.1.center" timestamp="1575263065940">
+    <state width="1238" height="262" key="GridCell.Tab.1.bottom/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510411975" />
+    <state width="1238" height="262" key="GridCell.Tab.1.bottom/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974487" />
+    <state width="1238" height="262" key="GridCell.Tab.1.bottom/0.0.1280.745@0.0.1280.745" timestamp="1575386704103" />
+    <state width="1238" height="262" key="GridCell.Tab.1.center" timestamp="1575510411972">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
-    <state width="1238" height="262" key="GridCell.Tab.1.center/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575225722838" />
-    <state width="1238" height="262" key="GridCell.Tab.1.center/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575263065940" />
-    <state width="1238" height="262" key="GridCell.Tab.1.left" timestamp="1575263065939">
+    <state width="1238" height="262" key="GridCell.Tab.1.center/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510411972" />
+    <state width="1238" height="262" key="GridCell.Tab.1.center/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974486" />
+    <state width="1238" height="262" key="GridCell.Tab.1.center/0.0.1280.745@0.0.1280.745" timestamp="1575386704102" />
+    <state width="1238" height="262" key="GridCell.Tab.1.left" timestamp="1575510411971">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
-    <state width="1238" height="262" key="GridCell.Tab.1.left/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575225722838" />
-    <state width="1238" height="262" key="GridCell.Tab.1.left/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575263065939" />
-    <state width="1238" height="262" key="GridCell.Tab.1.right" timestamp="1575263065941">
+    <state width="1238" height="262" key="GridCell.Tab.1.left/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510411971" />
+    <state width="1238" height="262" key="GridCell.Tab.1.left/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974485" />
+    <state width="1238" height="262" key="GridCell.Tab.1.left/0.0.1280.745@0.0.1280.745" timestamp="1575386704102" />
+    <state width="1238" height="262" key="GridCell.Tab.1.right" timestamp="1575510411974">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
-    <state width="1238" height="262" key="GridCell.Tab.1.right/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575225722839" />
-    <state width="1238" height="262" key="GridCell.Tab.1.right/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575263065941" />
+    <state width="1238" height="262" key="GridCell.Tab.1.right/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510411974" />
+    <state width="1238" height="262" key="GridCell.Tab.1.right/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974486" />
+    <state width="1238" height="262" key="GridCell.Tab.1.right/0.0.1280.745@0.0.1280.745" timestamp="1575386704103" />
     <state x="128" y="0" key="SettingsEditor" timestamp="1575263755739">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
     <state x="128" y="0" key="SettingsEditor/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575263755739" />
-    <state x="296" y="201" key="com.intellij.ide.util.TipDialog" timestamp="1575219167531">
+    <state x="296" y="201" key="com.intellij.ide.util.TipDialog" timestamp="1575322734948">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
-    <state x="296" y="201" key="com.intellij.ide.util.TipDialog/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575219167531" />
+    <state x="296" y="201" key="com.intellij.ide.util.TipDialog/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575322734948" />
     <state x="296" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575147745834" />
+    <state x="208" y="144" width="1028" height="600" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1575358656292">
+      <screen x="0" y="0" width="1280" height="745" />
+    </state>
+    <state x="208" y="144" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575274499182" />
+    <state x="208" y="144" width="1028" height="600" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.745@0.0.1280.745" timestamp="1575358656292" />
     <state x="305" y="185" key="run.anything.popup" timestamp="1575263733502">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
     <state x="305" y="185" key="run.anything.popup/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575263733502" />
-    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup" timestamp="1575263782240">
+    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup" timestamp="1575510686781">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
-    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575263782240" />
+    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510686781" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575154961985" />
   </component>
   <component name="XDebuggerManager">
@@ -256,12 +281,205 @@
           <line>5</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl088.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl086.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl086.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl086.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl086.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl086.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl086.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl086.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day19/CheckCharacter.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day19/CheckCharacter.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day19/CheckCharacter.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day19/CheckCharacter.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day19/CheckCharacter.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day19/CheckCharacter.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day19/CheckCharacter.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day19/CheckCharacter.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl091.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/repl/Repl091.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JavaProgrammingB15Online$WarmUp16.ic" NAME="WarmUp16 Coverage Results" MODIFIED="1575134618160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>day16.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JavaProgrammingB15Online$Repl086.ic" NAME="Repl086 Coverage Results" MODIFIED="1575344309918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>repl.*</FILTER>
     </SUITE>
   </component>
 </project>
