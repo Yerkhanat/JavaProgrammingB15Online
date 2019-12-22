@@ -19,12 +19,19 @@ public class ArrayPracticeWithMethod {
         System.out.println("==========================================");
     }public static void printMaxOfArray(int[] numbers){
         int max = numbers[0];
+        int min = numbers[0];
         for (int i = 0; i <numbers.length ; i++) {
             if(max<numbers[i]){
                 max = numbers[i];
             }
+            for (int j = 0; j <numbers.length ; j++) {
+                if(min>numbers[j]){
+                    min = numbers[j];
+                }
 
-        } System.out.println("maxium number inside the array is "+max);
+            }
+        } System.out.println("maximum number inside the array is "+max);
+        System.out.println("minimum number inside the array is "+min);
         System.out.println("==========================================");
     }
 
