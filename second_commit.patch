@@ -1,0 +1,2357 @@
+Index: src/repl/Repl088.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl088.java	(date 1575386674000)
++++ src/repl/Repl088.java	(date 1575386674000)
+@@ -0,0 +1,51 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl088 {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        int countOfCats = 0;
++        int countOfDogs = 0;
++        String word = scan.next();
++        while (word.length() > 2) {
++            if (word.contains("cat")) {
++                countOfCats++;
++                if (word.startsWith("cat")) {
++                    word = word.substring(word.indexOf("cat") + 3, word.length());
++
++                } else if (word.endsWith("cat")) {
++                    word = word.substring(0, word.indexOf("cat"));
++
++                } else if(word.contains("cat")) {
++                    word = word.substring(word.indexOf("cat") + 3);
++                }
++
++                else if (word.startsWith("cat") && word.endsWith("cat")) {
++                    word = word.substring((word.indexOf("cat") + 3), (word.indexOf("cat")));
++                }
++            }
++            if (word.contains("dog")) {
++                countOfDogs++;
++                if (word.startsWith("dog")) {
++                    word = word.substring(word.indexOf("dog") + 3, word.length());
++
++                } else if(word.contains("dog")){
++                    word=word.substring(word.indexOf("dog")+3);
++                }
++                else if (word.endsWith("dog")) {
++                    word = word.substring(word.indexOf("dog")+3, word.indexOf("dog"));
++
++                } else if (word.startsWith("dog") && word.endsWith("dog")) {
++                    word = word.substring((word.indexOf("dog") + 3), (word.indexOf("dog")));
++                }
++            }
++        }
++        if (countOfCats == countOfDogs) {
++            System.out.println("true");
++        } else {
++            System.out.println("false");
++        }
++
++    }
++}
+Index: src/repl/Repl086.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl086.java	(date 1575423363000)
++++ src/repl/Repl086.java	(date 1575423363000)
+@@ -0,0 +1,30 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl086 {
++    public static void main(String[] args) {
++        Scanner input = new Scanner(System.in);
++        String name1="";
++        String name ="";
++        String answer = "";
++        //String guestName=input.next();
++        while (!answer.equals("no")) {
++            System.out.println("Please enter guest name:");
++            name1+=","+input.next();
++            //System.out.println(name);
++            System.out.println("Do you want to enter new guest name:");
++            answer = input.next();
++            if(answer.equals("no")){
++                System.out.println(name1);
++            }
++            } //System.out.println(name.substring(0,name.length()-2));
++
++        }
++
++
++
++
++        // guestName+=", "+input.next();
++    }
++
+Index: src/day18/EvenNumber.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day18/EvenNumber.java	(date 1575341815000)
++++ src/day18/EvenNumber.java	(date 1575341815000)
+@@ -0,0 +1,12 @@
++package day18;
++
++public class EvenNumber {
++    public static void main(String[] args) {
++        for (int i = 0; i <100 ; i++) {
++            if (i%2==1){
++                System.out.println(i);
++            }
++
++        }
++    }
++}
+Index: src/day18/ForLoop.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day18/ForLoop.java	(date 1575339880000)
++++ src/day18/ForLoop.java	(date 1575339880000)
+@@ -0,0 +1,10 @@
++package day18;
++
++public class ForLoop {
++    public static void main(String[] args) {
++
++        for (int i=0; i<=5; ++i){
++            System.out.println("Happy birthday to me");
++        }
++    }
++}
+Index: src/day18/DoWhileAtLeastRunOnce.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day18/DoWhileAtLeastRunOnce.java	(date 1575337079000)
++++ src/day18/DoWhileAtLeastRunOnce.java	(date 1575337079000)
+@@ -0,0 +1,13 @@
++package day18;
++
++public class DoWhileAtLeastRunOnce {
++    public static void main(String[] args) {
++         int x =1000;
++         do{
++             System.out.println("Keep going");
++         }while(x<5);
++        System.out.println("THE END");
++//        String word = "hello";
++//        word.endsWith("o");
++    }
++}
+Index: src/day18/DoWhileIntro.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day18/DoWhileIntro.java	(date 1575336606000)
++++ src/day18/DoWhileIntro.java	(date 1575336606000)
+@@ -0,0 +1,16 @@
++package day18;
++
++public class DoWhileIntro {
++    public static void main(String[] args) {
++        int x=5;
++
++        do{
++            System.out.println(x);
++            --x;
++        }while (x>0);
++    }
++}
++
++// while loop check the condition first then enter the statement
++// do while loop will take the action at least once then check the condition
++
+Index: src/repl/Repl068.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl068.java	(date 1575336500000)
++++ src/repl/Repl068.java	(date 1575336500000)
+@@ -0,0 +1,15 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl068 {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        String txt = scan.next();
++        String txt1 = txt.substring(0,(txt.length()-1));
++        System.out.println(txt1);
++
++
++
++    }
++}
+Index: src/repl/Repl067.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl067.java	(date 1575274741000)
++++ src/repl/Repl067.java	(date 1575274741000)
+@@ -0,0 +1,20 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl067 {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        String word = scan.next();
++        //WRITE YOUR CODE HERE
++
++            System.out.println(word.charAt(4)+""+word.charAt(3)+word.charAt(2)+word.charAt(1)+word.charAt(0));
++        }
++    }
++
++//        if (word.length()<4){
++//        System.out.println("Too short!");
++//        }else if(word.length()>5){
++//        System.out.println("Too long!");
++//
++//        }else
+\ No newline at end of file
+Index: src/repl/Repl066.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl066.java	(date 1575273902000)
++++ src/repl/Repl066.java	(date 1575273902000)
+@@ -0,0 +1,18 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl066 {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        String word1 = scan.next();
++        String word2 = scan.next();
++        //YOUR CODE HERE
++
++        if(word1.length()==3 && word2.length()==3){
++            System.out.println(word1.charAt(0)+""+word2.charAt(0)+word1.charAt(1)+word2.charAt(1)+word1.charAt(2)+word2.charAt(2));
++        }else {
++            System.out.println("cannot merge");
++        }
++    }
++}
+Index: src/repl/Repl051.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl051.java	(date 1575770899000)
++++ src/repl/Repl051.java	(date 1575770899000)
+@@ -0,0 +1,24 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl051 {
++    public static void main(String[] args) {
++        Scanner input = new Scanner(System.in);
++        String split = input.next();
++        int numberOfPeople = input.nextInt();
++        double checkAmount = input.nextDouble();
++        input.nextLine();
++        String serviceQuality = input.nextLine();
++
++        System.out.println(split.length());
++
++        if (split.equals("Yes") && serviceQuality.equals("Excellent")) {
++            System.out.println("Number of people entered: " + numberOfPeople);
++            System.out.println("Total to pay: " + (1.25 * checkAmount));
++            System.out.println("Total tip: " + 0.25 * checkAmount);
++            System.out.println("Total per person: " + ((1.25 * checkAmount) / numberOfPeople));
++            System.out.println("Tip per person: " + (0.25 * checkAmount) / numberOfPeople);
++        }
++    }
++}
+\ No newline at end of file
+Index: src/day20/WorkingWIthMoreThanOneCharInString.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day20/WorkingWIthMoreThanOneCharInString.java	(date 1575513019000)
++++ src/day20/WorkingWIthMoreThanOneCharInString.java	(date 1575513019000)
+@@ -0,0 +1,8 @@
++package day20;
++
++public class WorkingWIthMoreThanOneCharInString {
++
++    public static void main(String[] args) {
++
++    }
++}
+Index: src/day20/Get2SiblingChar.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day20/Get2SiblingChar.java	(date 1575513801000)
++++ src/day20/Get2SiblingChar.java	(date 1575513801000)
+@@ -0,0 +1,11 @@
++package day20;
++
++public class Get2SiblingChar {
++    public static void main(String[] args) {
++        String name = "Arya";
++        for (int i = 0; i <name.length()-1 ; i++) {
++            System.out.println(name.charAt(i)+""+name.charAt(i+1));
++
++        }
++    }
++}
+Index: src/repl/Repl093.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl093.java	(date 1575700623000)
++++ src/repl/Repl093.java	(date 1575700623000)
+@@ -0,0 +1,28 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl093 {
++    public static void main(String[] args) {
++        boolean exists = false;
++        Scanner scan = new Scanner(System.in);
++        String word = scan.next();
++
++        if (word.length()==1) {
++            System.out.println("false");
++        }  else {
++            for (int i = 0; i < word.length(); i++) {
++                if (word.charAt(0) == 'j' || word.charAt(1) == 'j') {
++                    System.out.println("true");
++                    break;
++                } else {
++                    System.out.println("false");
++                    break;
++
++                }
++            }
++        }
++        }
++
++}
++
+Index: src/repl/Repl094.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl094.java	(date 1575705712000)
++++ src/repl/Repl094.java	(date 1575705712000)
+@@ -0,0 +1,32 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl094 {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        String shoppingListReport = "";
++        String item = "";
++        String countinue = "";
++        double price = 0;
++        int count = 1;
++        double totalPrice = 0;
++        do{
++            System.out.println("Enter item"+count+" and its price: ");
++            item=scan.next();
++            price =scan.nextDouble();
++            totalPrice+=price;
++            shoppingListReport += "Item"+count+": "+item+" Price: "+price+", ";
++
++
++
++            System.out.println("Add on more item");
++            countinue = scan.next();
++            count++;
++        }while (!countinue.equalsIgnoreCase("no")&&count <=10);
++
++
++        System.out.println(shoppingListReport.substring(0,shoppingListReport.length()-2));
++        System.out.println("Total price: "+totalPrice);
++    }
++}
+Index: src/repl/Repl095.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl095.java	(date 1575706309000)
++++ src/repl/Repl095.java	(date 1575706309000)
+@@ -0,0 +1,14 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl095 {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        char start = scan.next().charAt(0);
++        char end = scan.next().charAt(0);
++        for (char i=start; i<end; i++){
++            System.out.print(i);
++        }
++    }
++}
+Index: src/repl/Repl097.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl097.java	(date 1575708003000)
++++ src/repl/Repl097.java	(date 1575708003000)
+@@ -0,0 +1,26 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl097 {
++    public static void main(String[] args) {
++
++        Scanner scan= new Scanner(System.in);
++        String word = scan.next();
++        int count =0;
++        for (int i =0; i<=word.length(); i++) {
++            if (word.startsWith("java") || word.contains("java")){
++                count++;
++            word = word.substring(word.indexOf("java")+3);
++            }
++            else if(word.endsWith("java")){
++                count++;
++                word=word.substring(0,word.indexOf("java"));
++            }
++
++        } System.out.println(count);
++
++
++
++    }
++}
+Index: src/repl/Repl098.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl098.java	(date 1575708382000)
++++ src/repl/Repl098.java	(date 1575708382000)
+@@ -0,0 +1,17 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl098 {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        String str = scan.nextLine();
++        int count = 0;
++        for (int i=0; i<str.length(); i++){
++            if (str.substring(i).startsWith("hi")){
++                count++;
++            }
++        }
++        System.out.println(count);
++    }
++}
+Index: src/repl/Repl099.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl099.java	(date 1575709634000)
++++ src/repl/Repl099.java	(date 1575709634000)
+@@ -0,0 +1,23 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl099 {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        String str = scan.next();
++        int n = scan.nextInt();
++        int count =0;
++        String word = str.substring(0,n);
++        for (int i = 0; i<str.length(); i++){
++            if(str.substring(i).startsWith(word)) {
++                count++;
++            }
++        }if (count>1){
++            System.out.println("true");
++        }else {
++            System.out.println("false");
++        }
++
++    }
++}
+Index: src/repl/Repl100.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl100.java	(date 1575752855000)
++++ src/repl/Repl100.java	(date 1575752855000)
+@@ -0,0 +1,41 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl100 {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        String str = "breadAbread";
++        int count=0;
++
++
++        for (int i=0; i<str.length()-4;i++){
++            if(str.substring(i,i+5).equals("bread")) {
++                count++;
++
++
++                if (count == 3) {
++
++                    int sub1 = str.indexOf("bread") + 5;
++                    String str1 = str.substring(str.indexOf(("bread"), sub1));
++                    int sub2 = str1.indexOf("bread") + 5;
++                    int sub3 = str1.indexOf(("bread"), sub2);
++                    String str2 = str1.substring(sub2, sub3);
++                    System.out.println(str2);
++
++
++                    break;
++                }
++                else if (count == 2) {
++                    int sub1 = str.indexOf("bread") + 5;
++                    int sub2 = str.indexOf(("bread"), sub1 + 1);
++                    System.out.println(str.substring(sub1, sub2));
++                    break;
++
++                }
++            }
++        }if(count<2) {
++            System.out.println("nothing");
++        }
++    }
++}
+Index: src/day21/LoopControlStatement.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day21/LoopControlStatement.java	(date 1575745119000)
++++ src/day21/LoopControlStatement.java	(date 1575745119000)
+@@ -0,0 +1,7 @@
++package day21;
++
++public class LoopControlStatement {
++    public static void main(String[] args) {
++
++    }
++}
+Index: src/repl/Repl101.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl101.java	(date 1575746776000)
++++ src/repl/Repl101.java	(date 1575746776000)
+@@ -0,0 +1,25 @@
++package repl;
++
++public class Repl101 {
++    public static void main(String[] args) {
++
++        String word = "python is an interpreted.";
++        int count1=0;
++        int count2=0;
++        for (int i=0; i<word.length()-4; i++){
++            if(word.substring(i,i+4).equals("java")){
++                count1++;
++            }
++        }
++        for (int x=0; x<word.length()-5; x++){
++            if(word.substring(x,x+5).equals("python")){
++                count2++;
++            }
++        }
++        if(count1==count2){
++            System.out.println("true");
++        } else {
++            System.out.println("false");
++        }
++    }
++}
+Index: src/day21/NameBreaker.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day21/NameBreaker.java	(date 1575751701000)
++++ src/day21/NameBreaker.java	(date 1575751701000)
+@@ -0,0 +1,14 @@
++package day21;
++
++public class NameBreaker {
++    public static void main(String[] args) {
++        String name ="Yerkhanat";
++        for (int x = 0; x <name.length(); x++) {
++            if (name.substring(x, x + 1).equalsIgnoreCase("n")){
++            System.out.println("found it at index: " +x);
++            break;
++        }
++            System.out.println(name.substring(x,x+1));
++        }
++    }
++}
+Index: src/day21/LoopControlStatement2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day21/LoopControlStatement2.java	(date 1575752361000)
++++ src/day21/LoopControlStatement2.java	(date 1575752361000)
+@@ -0,0 +1,12 @@
++package day21;
++
++public class LoopControlStatement2 {
++    public static void main(String[] args) {
++        for (int i = 1; i <=10 ; i++) {
++            if(i%2==1){
++                continue;
++            }
++            System.out.println(i);
++        }
++    }
++}
+Index: src/repl/Repl100v2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl100v2.java	(date 1575753844000)
++++ src/repl/Repl100v2.java	(date 1575753844000)
+@@ -0,0 +1,24 @@
++package repl;
++
++import java.util.Scanner;
++
++public class Repl100v2 {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        String str = "ddsfsdfsdgsdggbread";
++        int count=0;
++
++
++//        for (int i=0; i<str.length();i++){
++            int first = str.indexOf(("bread"));
++            int last = str.lastIndexOf("bread");
++            if(first!=last) {
++                System.out.println(str.substring(first + 5, last));
++            }else {
++                System.out.println("nothing");
++
++           }
++
++        }
++    }
++
+Index: src/day21/SkipAll5s.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day21/SkipAll5s.java	(date 1575754242000)
++++ src/day21/SkipAll5s.java	(date 1575754242000)
+@@ -0,0 +1,12 @@
++package day21;
++
++public class SkipAll5s {
++    public static void main(String[] args) {
++        for (int i = 1; i <=100 ; i++) {
++            if(i%5==0){
++                System.out.println("skipping the "+ i);
++                continue;
++            }System.out.println(i);
++        }
++    }
++}
+Index: src/day20/PalindromeTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day20/PalindromeTest.java	(date 1575510844000)
++++ src/day20/PalindromeTest.java	(date 1575510844000)
+@@ -0,0 +1,24 @@
++package day20;
++
++public class PalindromeTest {
++    public static void main(String[] args) {
++        //if you reverse the string and it does not change
++        //the string is called Palindrome
++        // level, kayak, elle, madam, aziza
++        String name = "Nurses run";
++        String reversedName = "";
++        for (int x= name.length()-1 ; x >=0 ; x--) {
++            reversedName = reversedName+name.charAt(x);
++
++        }
++        System.out.println("name= "+name);
++        System.out.println("reversed name="+reversedName);
++        if (name.equalsIgnoreCase(reversedName)){
++            System.out.println("palenidrome test has passed");
++        }else {
++            System.out.println("failed");
++        }
++
++        // does not car about space ()
++    }
++}
+Index: src/repl/Repl091.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/Repl091.java	(date 1575507360000)
++++ src/repl/Repl091.java	(date 1575507360000)
+@@ -0,0 +1,36 @@
++package repl;
++
++public class Repl091 {
++    public static void main(String[] args) {
++        char v = 'v';
++        char z = 'z';
++        char y = 'y';
++        char x = 'x';
++        char w ='w';
++        for (char overAll = z; overAll >=v; overAll--){
++            if (overAll== 'y') {
++                for (char i = z; i >= v; i--){
++                    System.out.println(z+""+ i); }
++            }if (overAll== 'y') {
++                for (char l = z; l >= v; l--){
++                    System.out.println(y+""+ l); }
++            }if (overAll== 'x') {
++                for (char k = z; k >= v; k--){
++                    System.out.println('x'+""+ k); }
++            }if (overAll== 'w') {
++                for (char t = z; t >= v; t--){
++                    System.out.println(w+""+ t); }
++            }if (overAll== 'y') {
++                for (char n = z; n >= v; n--){
++                    System.out.println(v+""+ n); }
++            }
++
++
++
++
++
++
++
++        }
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision fda377d87b9ced4915d9bd90ff1d1cc4a7e45f3e)
++++ .idea/workspace.xml	(date 1575852639000)
+@@ -1,13 +1,74 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="da574ce6-7eb9-408a-9d01-22dd99978fd3" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/repl/Repl064.java" afterDir="false" />
++    <list default="true" id="da574ce6-7eb9-408a-9d01-22dd99978fd3" name="Default Changelist" comment="second commit">
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day18/DoWhileAtLeastRunOnce.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day18/DoWhileIntro.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day18/EvenNumber.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day18/ForLoop.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day19/CharAndForLoop.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day19/CheckCharacter.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day19/FindingTheCountOfSomething.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day19/RepeatVariables.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day19/SlowDownLoop.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day19/StairCase.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day19/SumOfAllNumbers.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day20/Get2SiblingChar.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day20/PalindromeTest.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day20/WorkingWIthMoreThanOneCharInString.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day21/SearchSomethinginString.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day21/WarmUp21.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl051.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl064.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl066.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl067.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl068.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl086.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl088.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl091.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl093.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl094.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl095.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl097.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl098.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/Repl099.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/repl/test.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day18/DoWhileAtLeastRunOnce.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day18/DoWhileIntro.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day18/EvenNumber.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day18/ForLoop.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day19/CharAndForLoop.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day19/CheckCharacter.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day19/FindingTheCountOfSomething.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day19/RepeatVariables.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day19/SlowDownLoop.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day19/StairCase.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day19/SumOfAllNumbers.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day20/Get2SiblingChar.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day20/PalindromeTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day20/WorkingWIthMoreThanOneCharInString.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day21/LoopControlStatement.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day21/LoopControlStatement2.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day21/NameBreaker.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/day21/SkipAll5s.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl051.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl066.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl067.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl068.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl086.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl088.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl091.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl093.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl094.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl095.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl097.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl098.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl099.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl100.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl100v2.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/Repl101.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/repl/test.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day06/CapturingMultipleWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day06/CapturingMultipleWord.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day16/GiveMeFive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day16/GiveMeFive.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/day06/CapturingMultipleWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day06/CapturingMultipleWord.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/day16/GiveMeFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day16/GiveMeFive.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -46,10 +107,11 @@
+     <property name="project.structure.last.edited" value="Project" />
+     <property name="project.structure.proportion" value="0.15" />
+     <property name="project.structure.side.proportion" value="0.2" />
+-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
++    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+   </component>
+   <component name="RecentsManager">
+     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
++      <recent name="day21" />
+       <recent name="day17" />
+     </key>
+     <key name="CopyClassDialog.RECENTS_KEY">
+@@ -57,13 +119,13 @@
+       <recent name="day07" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Application.PalindromeTest">
+-    <configuration name="CheckCharacter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="day19.CheckCharacter" />
++  <component name="RunManager" selected="Application.ArrayCreation2">
++    <configuration name="ArrayChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="day22.ArrayChar" />
+       <module name="JavaProgrammingB15Online" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="day19.*" />
++          <option name="PATTERN" value="day22.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -71,12 +133,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="FindingTheCountOfSomething" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="day19.FindingTheCountOfSomething" />
++    <configuration name="ArrayCreation2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="day22.ArrayCreation2" />
+       <module name="JavaProgrammingB15Online" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="day19.*" />
++          <option name="PATTERN" value="day22.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -84,12 +146,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="PalindromeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="day20.PalindromeTest" />
++    <configuration name="ArrayPractice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="day22.ArrayPractice1" />
+       <module name="JavaProgrammingB15Online" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="day20.*" />
++          <option name="PATTERN" value="day22.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -97,12 +159,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Repl091" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="repl.Repl091" />
++    <configuration name="LoopingThroughArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="day22.LoopingThroughArray" />
+       <module name="JavaProgrammingB15Online" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="repl.*" />
++          <option name="PATTERN" value="day22.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -110,12 +172,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SumOfAllNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="day19.SumOfAllNumbers" />
++    <configuration name="StringArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="day22.StringArray" />
+       <module name="JavaProgrammingB15Online" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="day19.*" />
++          <option name="PATTERN" value="day22.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -124,19 +186,19 @@
+       </method>
+     </configuration>
+     <list>
+-      <item itemvalue="Application.SumOfAllNumbers" />
+-      <item itemvalue="Application.FindingTheCountOfSomething" />
+-      <item itemvalue="Application.CheckCharacter" />
+-      <item itemvalue="Application.Repl091" />
+-      <item itemvalue="Application.PalindromeTest" />
++      <item itemvalue="Application.ArrayPractice1" />
++      <item itemvalue="Application.ArrayChar" />
++      <item itemvalue="Application.StringArray" />
++      <item itemvalue="Application.LoopingThroughArray" />
++      <item itemvalue="Application.ArrayCreation2" />
+     </list>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Application.PalindromeTest" />
+-        <item itemvalue="Application.Repl091" />
+-        <item itemvalue="Application.CheckCharacter" />
+-        <item itemvalue="Application.FindingTheCountOfSomething" />
+-        <item itemvalue="Application.SumOfAllNumbers" />
++        <item itemvalue="Application.ArrayCreation2" />
++        <item itemvalue="Application.LoopingThroughArray" />
++        <item itemvalue="Application.StringArray" />
++        <item itemvalue="Application.ArrayChar" />
++        <item itemvalue="Application.ArrayPractice1" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -163,99 +225,180 @@
+       <option name="presentableId" value="Default" />
+       <updated>1573406173060</updated>
+     </task>
++    <task id="LOCAL-00001" summary="second commit">
++      <created>1575510883670</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1575510883671</updated>
++    </task>
++    <task id="LOCAL-00002" summary="second commit">
++      <created>1575740357797</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1575740357797</updated>
++    </task>
++    <task id="LOCAL-00003" summary="day22 intro Array">
++      <created>1575835727277</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1575835727277</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="second commit" />
++    <MESSAGE value="day22 intro Array" />
++    <option name="LAST_COMMIT_MESSAGE" value="day22 intro Array" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="412" y="289" width="455" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575224497562">
++    <state x="1924" y="205" key="#Unnamed" timestamp="1575773264068">
++      <screen x="1280" y="0" width="1920" height="1080" />
++    </state>
++    <state x="1924" y="205" key="#Unnamed/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575773264068" />
++    <state x="412" y="289" width="455" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575735436479">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+-    <state x="412" y="289" width="455" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575224497562" />
+-    <state x="412" y="314" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1575510116431">
++    <state x="412" y="289" width="455" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575735436479" />
++    <state x="412" y="314" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1575852622214">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+-    <state x="412" y="314" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510116431" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.bottom" timestamp="1575510526806">
++    <state x="412" y="314" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575852622214" />
++    <state x="412" y="337" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575741819199" />
++    <state x="198" y="0" key="CommitChangelistDialog2" timestamp="1575835726506">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+-    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510526806" />
++    <state x="198" y="0" key="CommitChangelistDialog2/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575835726506" />
++    <state x="198" y="0" key="CommitChangelistDialog2/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575740357411" />
++    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1920.1025@0.0.1920.1025" timestamp="1575738894499" />
++    <state x="456" y="300" key="Github.ShareDialog" timestamp="1575740516805">
++      <screen x="0" y="0" width="1280" height="800" />
++    </state>
++    <state x="456" y="300" key="Github.ShareDialog/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575740516805" />
++    <state width="1238" height="144" key="GridCell.Tab.0.bottom" timestamp="1575852570763">
++      <screen x="0" y="0" width="1280" height="800" />
++    </state>
++    <state width="1238" height="144" key="GridCell.Tab.0.bottom/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575843833954" />
++    <state width="1878" height="248" key="GridCell.Tab.0.bottom/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575781246151" />
+     <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974497" />
+     <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.745@0.0.1280.745" timestamp="1575443579032" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400217" />
++    <state width="1238" height="248" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575743209584" />
++    <state width="1238" height="144" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575852570763" />
+     <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124278" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333317" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.center" timestamp="1575510526803">
+-      <screen x="0" y="0" width="1280" height="745" />
++    <state width="1878" height="112" key="GridCell.Tab.0.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1575738894540" />
++    <state width="1878" height="282" key="GridCell.Tab.0.bottom/0.23.1280.722/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575782131024" />
++    <state width="1238" height="248" key="GridCell.Tab.0.bottom/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575757736180" />
++    <state width="1238" height="144" key="GridCell.Tab.0.center" timestamp="1575852570762">
++      <screen x="0" y="0" width="1280" height="800" />
+     </state>
+-    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510526803" />
++    <state width="1238" height="144" key="GridCell.Tab.0.center/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575843833951" />
++    <state width="1878" height="248" key="GridCell.Tab.0.center/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575781246149" />
+     <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974493" />
+     <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.745@0.0.1280.745" timestamp="1575443579030" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400214" />
++    <state width="1238" height="248" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575743209581" />
++    <state width="1238" height="144" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575852570762" />
+     <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124276" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333314" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.left" timestamp="1575510526802">
+-      <screen x="0" y="0" width="1280" height="745" />
++    <state width="1878" height="112" key="GridCell.Tab.0.center/0.0.1920.1025@0.0.1920.1025" timestamp="1575738894539" />
++    <state width="1878" height="282" key="GridCell.Tab.0.center/0.23.1280.722/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575782131023" />
++    <state width="1238" height="248" key="GridCell.Tab.0.center/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575757736173" />
++    <state width="1238" height="144" key="GridCell.Tab.0.left" timestamp="1575852570761">
++      <screen x="0" y="0" width="1280" height="800" />
+     </state>
+-    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510526802" />
++    <state width="1238" height="144" key="GridCell.Tab.0.left/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575843833950" />
++    <state width="1878" height="248" key="GridCell.Tab.0.left/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575781246148" />
+     <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974491" />
+     <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.745@0.0.1280.745" timestamp="1575443579029" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400207" />
++    <state width="1238" height="248" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575743209578" />
++    <state width="1238" height="144" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575852570761" />
+     <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124273" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333312" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.right" timestamp="1575510526804">
+-      <screen x="0" y="0" width="1280" height="745" />
++    <state width="1878" height="112" key="GridCell.Tab.0.left/0.0.1920.1025@0.0.1920.1025" timestamp="1575738894538" />
++    <state width="1878" height="282" key="GridCell.Tab.0.left/0.23.1280.722/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575782131022" />
++    <state width="1238" height="248" key="GridCell.Tab.0.left/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575757736172" />
++    <state width="1238" height="144" key="GridCell.Tab.0.right" timestamp="1575852570762">
++      <screen x="0" y="0" width="1280" height="800" />
+     </state>
+-    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510526804" />
++    <state width="1238" height="144" key="GridCell.Tab.0.right/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575843833952" />
++    <state width="1878" height="248" key="GridCell.Tab.0.right/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575781246150" />
+     <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974495" />
+     <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.745@0.0.1280.745" timestamp="1575443579031" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575155400216" />
++    <state width="1238" height="248" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575743209583" />
++    <state width="1238" height="144" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575852570762" />
+     <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.800/1280.23.1920.1053@0.0.1280.800" timestamp="1575152124277" />
+-    <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575227333315" />
+-    <state width="1238" height="262" key="GridCell.Tab.1.bottom" timestamp="1575510411975">
++    <state width="1878" height="112" key="GridCell.Tab.0.right/0.0.1920.1025@0.0.1920.1025" timestamp="1575738894539" />
++    <state width="1878" height="282" key="GridCell.Tab.0.right/0.23.1280.722/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575782131024" />
++    <state width="1238" height="248" key="GridCell.Tab.0.right/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575757736178" />
++    <state width="1238" height="195" key="GridCell.Tab.1.bottom" timestamp="1575826902701">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+-    <state width="1238" height="262" key="GridCell.Tab.1.bottom/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510411975" />
++    <state width="1238" height="195" key="GridCell.Tab.1.bottom/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575826902701" />
++    <state width="1878" height="282" key="GridCell.Tab.1.bottom/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575778553945" />
+     <state width="1238" height="262" key="GridCell.Tab.1.bottom/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974487" />
+     <state width="1238" height="262" key="GridCell.Tab.1.bottom/0.0.1280.745@0.0.1280.745" timestamp="1575386704103" />
+-    <state width="1238" height="262" key="GridCell.Tab.1.center" timestamp="1575510411972">
++    <state width="1238" height="106" key="GridCell.Tab.1.bottom/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575742170288" />
++    <state width="1878" height="282" key="GridCell.Tab.1.bottom/0.23.1280.722/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575782131027" />
++    <state width="1238" height="196" key="GridCell.Tab.1.bottom/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575749116193" />
++    <state width="1238" height="195" key="GridCell.Tab.1.center" timestamp="1575826902697">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+-    <state width="1238" height="262" key="GridCell.Tab.1.center/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510411972" />
++    <state width="1238" height="195" key="GridCell.Tab.1.center/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575826902697" />
++    <state width="1878" height="282" key="GridCell.Tab.1.center/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575778553939" />
+     <state width="1238" height="262" key="GridCell.Tab.1.center/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974486" />
+     <state width="1238" height="262" key="GridCell.Tab.1.center/0.0.1280.745@0.0.1280.745" timestamp="1575386704102" />
+-    <state width="1238" height="262" key="GridCell.Tab.1.left" timestamp="1575510411971">
++    <state width="1238" height="106" key="GridCell.Tab.1.center/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575742170286" />
++    <state width="1878" height="282" key="GridCell.Tab.1.center/0.23.1280.722/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575782131026" />
++    <state width="1238" height="196" key="GridCell.Tab.1.center/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575749116190" />
++    <state width="1238" height="195" key="GridCell.Tab.1.left" timestamp="1575826902695">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+-    <state width="1238" height="262" key="GridCell.Tab.1.left/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510411971" />
++    <state width="1238" height="195" key="GridCell.Tab.1.left/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575826902695" />
++    <state width="1878" height="282" key="GridCell.Tab.1.left/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575778553937" />
+     <state width="1238" height="262" key="GridCell.Tab.1.left/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974485" />
+     <state width="1238" height="262" key="GridCell.Tab.1.left/0.0.1280.745@0.0.1280.745" timestamp="1575386704102" />
+-    <state width="1238" height="262" key="GridCell.Tab.1.right" timestamp="1575510411974">
++    <state width="1238" height="106" key="GridCell.Tab.1.left/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575742170284" />
++    <state width="1878" height="282" key="GridCell.Tab.1.left/0.23.1280.722/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575782131025" />
++    <state width="1238" height="196" key="GridCell.Tab.1.left/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575749116183" />
++    <state width="1238" height="195" key="GridCell.Tab.1.right" timestamp="1575826902698">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+-    <state width="1238" height="262" key="GridCell.Tab.1.right/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510411974" />
++    <state width="1238" height="195" key="GridCell.Tab.1.right/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575826902698" />
++    <state width="1878" height="282" key="GridCell.Tab.1.right/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575778553941" />
+     <state width="1238" height="262" key="GridCell.Tab.1.right/0.0.1280.745/1280.23.1920.1057@0.0.1280.745" timestamp="1575428974486" />
+     <state width="1238" height="262" key="GridCell.Tab.1.right/0.0.1280.745@0.0.1280.745" timestamp="1575386704103" />
+-    <state x="128" y="0" key="SettingsEditor" timestamp="1575263755739">
++    <state width="1238" height="106" key="GridCell.Tab.1.right/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575742170287" />
++    <state width="1878" height="282" key="GridCell.Tab.1.right/0.23.1280.722/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575782131026" />
++    <state width="1238" height="196" key="GridCell.Tab.1.right/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575749116192" />
++    <state x="128" y="0" key="SettingsEditor" timestamp="1575758767959">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+-    <state x="128" y="0" key="SettingsEditor/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575263755739" />
+-    <state x="296" y="201" key="com.intellij.ide.util.TipDialog" timestamp="1575322734948">
+-      <screen x="0" y="0" width="1280" height="745" />
++    <state x="128" y="0" key="SettingsEditor/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575758767959" />
++    <state x="1472" y="0" key="SettingsEditor/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575699082060" />
++    <state x="1724" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1575823112175">
++      <screen x="1280" y="0" width="1920" height="1080" />
+     </state>
+     <state x="296" y="201" key="com.intellij.ide.util.TipDialog/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575322734948" />
++    <state x="1724" y="291" key="com.intellij.ide.util.TipDialog/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575823112175" />
+     <state x="296" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.722/1280.23.1920.1057@0.23.1280.722" timestamp="1575147745834" />
+     <state x="208" y="144" width="1028" height="600" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1575358656292">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+     <state x="208" y="144" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575274499182" />
+     <state x="208" y="144" width="1028" height="600" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.745@0.0.1280.745" timestamp="1575358656292" />
++    <state width="600" height="424" key="javadoc.popup" timestamp="1575758069362">
++      <screen x="0" y="0" width="1280" height="745" />
++    </state>
++    <state width="600" height="424" key="javadoc.popup/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575758069362" />
+     <state x="305" y="185" key="run.anything.popup" timestamp="1575263733502">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+     <state x="305" y="185" key="run.anything.popup/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575263733502" />
+-    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup" timestamp="1575510686781">
++    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup" timestamp="1575840616785">
+       <screen x="0" y="0" width="1280" height="745" />
+     </state>
+-    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575510686781" />
++    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1575840616785" />
++    <state x="305" y="123" width="670" height="677" key="search.everywhere.popup/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575740475538" />
+     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/1280.0.1920.1076@0.0.1280.800" timestamp="1575154961985" />
+   </component>
+   <component name="XDebuggerManager">
+@@ -470,6 +613,331 @@
+           <url>file://$PROJECT_DIR$/src/repl/Repl091.java</url>
+           <line>18</line>
+           <option name="timeStamp" value="124" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/test.java</url>
++          <line>11</line>
++          <option name="timeStamp" value="131" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/day20/Get2SiblingChar.java</url>
++          <line>4</line>
++          <option name="timeStamp" value="133" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/day20/Get2SiblingChar.java</url>
++          <line>5</line>
++          <option name="timeStamp" value="134" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/day20/Get2SiblingChar.java</url>
++          <line>6</line>
++          <option name="timeStamp" value="135" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl093.java</url>
++          <line>23</line>
++          <option name="timeStamp" value="142" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl093.java</url>
++          <line>10</line>
++          <option name="timeStamp" value="147" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl093.java</url>
++          <line>8</line>
++          <option name="timeStamp" value="149" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl094.java</url>
++          <line>14</line>
++          <option name="timeStamp" value="150" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl094.java</url>
++          <line>15</line>
++          <option name="timeStamp" value="151" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl094.java</url>
++          <line>22</line>
++          <option name="timeStamp" value="152" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl094.java</url>
++          <line>23</line>
++          <option name="timeStamp" value="153" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl094.java</url>
++          <line>24</line>
++          <option name="timeStamp" value="154" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl094.java</url>
++          <line>25</line>
++          <option name="timeStamp" value="155" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl094.java</url>
++          <line>28</line>
++          <option name="timeStamp" value="157" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl094.java</url>
++          <line>21</line>
++          <option name="timeStamp" value="158" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl095.java</url>
++          <line>8</line>
++          <option name="timeStamp" value="159" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl095.java</url>
++          <line>9</line>
++          <option name="timeStamp" value="160" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl095.java</url>
++          <line>10</line>
++          <option name="timeStamp" value="161" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl097.java</url>
++          <line>10</line>
++          <option name="timeStamp" value="162" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl097.java</url>
++          <line>11</line>
++          <option name="timeStamp" value="163" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl097.java</url>
++          <line>12</line>
++          <option name="timeStamp" value="164" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl097.java</url>
++          <line>13</line>
++          <option name="timeStamp" value="165" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl097.java</url>
++          <line>15</line>
++          <option name="timeStamp" value="166" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl097.java</url>
++          <line>16</line>
++          <option name="timeStamp" value="167" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl097.java</url>
++          <line>17</line>
++          <option name="timeStamp" value="168" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl097.java</url>
++          <line>18</line>
++          <option name="timeStamp" value="169" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl097.java</url>
++          <line>20</line>
++          <option name="timeStamp" value="170" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl098.java</url>
++          <line>9</line>
++          <option name="timeStamp" value="171" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl098.java</url>
++          <line>10</line>
++          <option name="timeStamp" value="172" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl098.java</url>
++          <line>11</line>
++          <option name="timeStamp" value="173" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl099.java</url>
++          <line>10</line>
++          <option name="timeStamp" value="174" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl099.java</url>
++          <line>11</line>
++          <option name="timeStamp" value="175" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl099.java</url>
++          <line>12</line>
++          <option name="timeStamp" value="176" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl099.java</url>
++          <line>13</line>
++          <option name="timeStamp" value="177" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl099.java</url>
++          <line>15</line>
++          <option name="timeStamp" value="178" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl099.java</url>
++          <line>17</line>
++          <option name="timeStamp" value="179" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl099.java</url>
++          <line>18</line>
++          <option name="timeStamp" value="180" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl099.java</url>
++          <line>16</line>
++          <option name="timeStamp" value="181" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl099.java</url>
++          <line>8</line>
++          <option name="timeStamp" value="182" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl099.java</url>
++          <line>7</line>
++          <option name="timeStamp" value="183" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/day21/WarmUp21.java</url>
++          <line>5</line>
++          <option name="timeStamp" value="184" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/day21/WarmUp21.java</url>
++          <line>6</line>
++          <option name="timeStamp" value="185" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/day21/WarmUp21.java</url>
++          <line>7</line>
++          <option name="timeStamp" value="186" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl100.java</url>
++          <line>8</line>
++          <option name="timeStamp" value="187" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl101.java</url>
++          <line>8</line>
++          <option name="timeStamp" value="196" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl101.java</url>
++          <line>9</line>
++          <option name="timeStamp" value="197" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl101.java</url>
++          <line>13</line>
++          <option name="timeStamp" value="198" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl101.java</url>
++          <line>14</line>
++          <option name="timeStamp" value="199" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl101.java</url>
++          <line>15</line>
++          <option name="timeStamp" value="200" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl101.java</url>
++          <line>10</line>
++          <option name="timeStamp" value="201" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/test.java</url>
++          <line>8</line>
++          <option name="timeStamp" value="202" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl100.java</url>
++          <line>16</line>
++          <option name="timeStamp" value="206" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl100.java</url>
++          <line>18</line>
++          <option name="timeStamp" value="207" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl100.java</url>
++          <line>20</line>
++          <option name="timeStamp" value="208" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl100.java</url>
++          <line>19</line>
++          <option name="timeStamp" value="209" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl100.java</url>
++          <line>21</line>
++          <option name="timeStamp" value="210" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl100.java</url>
++          <line>23</line>
++          <option name="timeStamp" value="211" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl100.java</url>
++          <line>27</line>
++          <option name="timeStamp" value="213" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl102.java</url>
++          <line>11</line>
++          <option name="timeStamp" value="214" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl102.java</url>
++          <line>12</line>
++          <option name="timeStamp" value="215" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl102.java</url>
++          <line>15</line>
++          <option name="timeStamp" value="216" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl102.java</url>
++          <line>16</line>
++          <option name="timeStamp" value="217" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl102.java</url>
++          <line>18</line>
++          <option name="timeStamp" value="218" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/Repl102.java</url>
++          <line>19</line>
++          <option name="timeStamp" value="219" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/repl/test.java</url>
++          <line>7</line>
++          <option name="timeStamp" value="220" />
+         </line-breakpoint>
+       </breakpoints>
+     </breakpoint-manager>
+Index: src/day19/CheckCharacter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day19/CheckCharacter.java	(date 1575443590000)
++++ src/day19/CheckCharacter.java	(date 1575443590000)
+@@ -0,0 +1,39 @@
++package day19;
++
++public class CheckCharacter {
++    public static void main(String[] args) {
++
++        String name = "xxxcatdogcat";
++        String name1= name;
++        int catCounter = 0;
++        int dogCounter =0;
++        for (int i = 0; i <name.length() ; i+=1) {
++
++            if(name.contains("cat")||name.startsWith("cat")){
++                catCounter++;
++                name = name.substring(name.indexOf("cat")+3);
++            }
++        }
++        for (int i = 0; i <name1.length() ; i++) {
++            if(name1.contains("dog")||name1.startsWith("dog")){
++                dogCounter++;
++                name1 = name1.substring(name1.indexOf("dog")+3);
++            }
++
++        }
++
++        //System.out.println("cat counts "+catCounter);
++        //System.out.println("dog counts "+ dogCounter);
++        if(catCounter==dogCounter){
++
++            System.out.println("true");
++        }else {
++            System.out.println("false");
++        }
++
++
++    }
++
++
++
++}
+Index: src/day19/FindingTheCountOfSomething.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day19/FindingTheCountOfSomething.java	(date 1575427391000)
++++ src/day19/FindingTheCountOfSomething.java	(date 1575427391000)
+@@ -0,0 +1,14 @@
++package day19;
++
++public class FindingTheCountOfSomething {
++    public static void main(String[] args) {
++        int n =0;
++        for (int i = 1; i < 100; i++) {
++            if (i%15==0){
++                n+=1;
++            }
++
++        }
++        System.out.println(n);
++    }
++}
+Index: src/day19/SumOfAllNumbers.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day19/SumOfAllNumbers.java	(date 1575425994000)
++++ src/day19/SumOfAllNumbers.java	(date 1575425994000)
+@@ -0,0 +1,11 @@
++package day19;
++
++public class SumOfAllNumbers {
++    public static void main(String[] args) {
++        int n = 0;
++        for (int i = 0; i <= 10; i++) {
++            n+=i;
++        }
++        System.out.println(n);
++    }
++}
+Index: src/day19/CharAndForLoop.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day19/CharAndForLoop.java	(date 1575424957000)
++++ src/day19/CharAndForLoop.java	(date 1575424957000)
+@@ -0,0 +1,21 @@
++package day19;
++
++public class CharAndForLoop {
++    public static void main(String[] args) {
++        // each character had it's corresponding ascci value
++        // from ascii table
++        System.out.println(" ----------English alphabet letters--------");
++//        char myChar = 65;
++//        for (int i = 0; i <26 ; i++) {
++//            System.out.print(i+1+ " ");
++//            System.out.print( myChar+ " ");
++//            ++myChar;
++//
++//        } // create interactive programm to ask you there startin character
++         // then print everything between
++
++        for (char ichar ='A'; ichar<'Z'; ichar++){
++            System.out.print(ichar+ " ");
++        }
++    }
++}
+Index: src/day19/StairCase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day19/StairCase.java	(date 1575422809000)
++++ src/day19/StairCase.java	(date 1575422809000)
+@@ -0,0 +1,12 @@
++package day19;
++
++public class StairCase {
++    public static void main(String[] args) {
++        String star = "";
++        for (int i = 0; i < 5; i++) {
++            star+="*";
++            System.out.println(star );
++
++        }
++    }
++}
+Index: src/day19/SlowDownLoop.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day19/SlowDownLoop.java	(date 1575422064000)
++++ src/day19/SlowDownLoop.java	(date 1575422064000)
+@@ -0,0 +1,26 @@
++package day19;
++
++import java.util.Scanner;
++
++public class SlowDownLoop {
++    public static void main(String[] args) {
++        Scanner input = new Scanner(System.in);
++        System.out.println("Please enter your start and end speed");
++        int start = input.nextInt();
++        int end = input.nextInt();
++        if(start<end){
++            System.out.println("Increasing");
++            for (int i = start; i <=end ; i++) {
++                System.out.print(i+ ", ");
++            }
++        }if(start>end) {
++            System.out.println("Decreasing");
++            for (int i = start; i >= end; i--) {
++                System.out.print(i + " ");
++
++            }
++        }else {
++            System.out.println("no action required");
++        }
++    }
++}
+Index: src/day19/RepeatVariables.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/day19/RepeatVariables.java	(date 1575418705000)
++++ src/day19/RepeatVariables.java	(date 1575418705000)
+@@ -0,0 +1,20 @@
++package day19;
++
++import java.util.Scanner;
++
++public class RepeatVariables {
++    public static void main(String[] args) {
++        Scanner input = new Scanner(System.in);
++        System.out.println("Please enter start speed");
++        int startSpeed = input.nextInt();
++        System.out.println("Please enter end speed");
++        int endSpeed = input.nextInt();
++
++
++        for (int i = startSpeed; i <= endSpeed ; i++) {
++
++            System.out.println(i);
++
++        }
++    }
++}
+Index: src/repl/test.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/repl/test.java	(date 1575781326000)
++++ src/repl/test.java	(date 1575781326000)
+@@ -0,0 +1,13 @@
++package repl;
++
++import java.util.Scanner;
++
++public class test {
++    public static void main(String[] args) {
++        Scanner input= new Scanner(System.in);
++        int num, digit1, digit2, digit3, digit4, digit5;
++        System.out.println("Enter your number:");
++        num=input.nextInt();
++        
++    }
++}
+\ No newline at end of file
+diff --git out/production/JavaProgrammingB15Online/repl/Repl066.class out/production/JavaProgrammingB15Online/repl/Repl066.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..a5589f1c54bf8e08b5751c756debd64238567de6
+GIT binary patch
+literal 1421
+zc$|$?TTc^F5dKbEx}_}ltEgNQw1q+e70@CI6{J|MB^dPSP)^!~?QXMsit<l<^v!2^
+zfCLkNfG_?d;+)+kK&Zx(c4p38znR(HUzZm@0nB1Mibg!p@UR|37>*)<M~Xa-q8~A(
+ziz{iQjhx4$NMa&_NexpPo-l;x49k%748d4@mm!q44+KMV*098SrL-@c9lmdprY&pd
+zxw*?7L*1*&kSrQ5LsQlfWiz==WMX<cMfwsqEQYSw$Lt|L=1G%Vg=9`ThE+&;Rk%~2
+zxb_-mGP-$A!R@}SA`LT{BaI~-GS+>vor6gQr$(e_oMLFqNuEDi<7E$~hNleCoLzD9
+zV%boz^(xYFl|x4pni*PeRnzcH$24Y?!>o?yc%dVOIUO%Cuj3V7Gqfz)wsfV#%WFaw
+z?E|+tjD-jmb)@k|!;+3=yrp_7p)ChW!YQco*QZ5Et~%M+KNNX+L*+MjQ+47>QDO+F
+z8F%`FFzjT;Dpw@A3tpmG^u%f!yy;uwGZpEG#cK^QYznI&i{1l~A!=9T^(vd>c2y;u
+zFLGyr973^7JRQXfC?w4MgYFVP5^3AYbNSwoMUq^}ElHd2jitR)6G3~8S`1oQ-AvVT
+ztkzSdVO5QNonh$8YFNkik*GTPNS1kC+RllFO+uQr?W0PWR+3R0Pn+Cz1;P7ry+SpI
+zzu^^b9hkx$@&i-1f&49S=cFuZxL<z*{OzaWw^O9KY32+mQW~}xhW`s2L*KvsFbJK#
+z8|nnW)LTHbg>FgWjCkG1IoNm4+)6a;E1^CkdR1;m2l0AzqN^JG8xe$vfB1pG-YJ6T
+z2xUjlP`9SYdg2V>@K?-?`8;_FEfG9JWK5AnNJ)w$>Xf9&1trHBqTkR!zHJR8DnvmK
+zQ6Ds-8XBl(i-$tTFtxNrt?ZG9LOSB3K{tAcH(&#I(CcAc#a-N^-a4^_`y>S^A1E?#
+ki7gEQ4gKCPhyiZ|gIFUTrO<bjBui;V=^mkbg8pNF05F+XJ^%m!
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl067.class out/production/JavaProgrammingB15Online/repl/Repl067.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..ed5679a11a292bd3cfca84cc5ace02291a3b1cfc
+GIT binary patch
+literal 1271
+zc$|$?>rN9v6#k~SEoG&Ja`l3spj$wS7cN>vp^DTLHI`tEzlQCEE^K$3-6_g1U&Ggs
+zACO?;1NczJGu<YwvKlAZbM{=mbH14~yFY%Oe+RIFmnrn(nuhTnT*pKT5lkv^Lzy>I
+zn8Ne`<>gYC!K{Wk4R;t4tCnNQHHN5>+hvFq-Kt<nmn}!UYS#CJx5M{r@(h$+liR!8
+zvy|O-#$?U%8T!heXxRC;Bo>yI3*@hJ%V8KcK9mpm5zpJ)+0R#`XF2<YRu}H=6D}JP
+zrl4<f0%wC*Q(AVuLLNtWD)`a$s)|hrFjaAzo+&mhMNMzBnOBKAbX;QSzfe)bypB8;
+zRKi^y_i$gw11xG-(y@#chRlZRN?&@su`OiHt@`N%9wzZfM**uE9_v`c6YAD|0EFtW
+zd%brcO!=Fua_mb{XNagX8VYt|x%raQXiD0Q;C0%}s1X`yot`5;QN=+c7j_C!w<){J
+zz9E07Z01h{-2k)3y>-IGj8d+c!c(j>#93=$q|OgT(REBN-&wLoZ@%P?q~VPjMYTdX
+zWJ8)WXbolAYSTv8z0k0sj&+k^suQ)GBll3WlL8`}+?1|&tYM4DmtFU;*`NuO)I5te
+z_kBU^zI1nJ*9a!K#ht1x{HXv~xJcx0z@6iU2ubh0!@;l%xr-%=+_o#06a@_>hUx#}
+z#xVZxJWN7;@oGiD)Ey_;M^>IRBORYP1N+(vr%5IPCo&}U_Ip3nKcNR%47S0ap&?3o
+z@f#xVPY^vrtUP;)`1T1BbJ{7ixr7pNC1OfMNt`1IoT8`GYydHm8u3d~!(RHV^j71E
+vpg4vwOuCo;MI#uc))`D=43`NV#g$f-t9VX2MX@4Y;2A}4k)0&_Ha*5K>b^NC
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl064.class out/production/JavaProgrammingB15Online/repl/Repl064.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..6b44f214ef3518829f599550273e92016d97e619
+GIT binary patch
+literal 1772
+zc$|$?OLN;)7(LffqQp@iwex~LppXW;F?CZy2&5EJL#SJ)FNc&;9=%pHu^L(ONY{ld
+zI>UxFEE!habxjxUjG5sF@Sk8fS2ELNqUpqo`#9hEUgv)D-~aah0<a1@i%Gm=qA-FY
+z&S#OqqFzc_%;Q~+UC5DlDU0{8oP)rMHhhpH<wJe?NT1eBTsHBsz|dvachwbvfkJUx
+zz^DW}j=)6C^_`oYR>KLmWWytps|B|7wq@w*dml7Z(~ShiYoXKj%6GY3Tv=Wt-jc2_
+zFjII?dn6yrvM2rBa$SY4zq=M^i8_rX0Z~nkm$=Drmyz-*4w_?2hRY|mj&i+norv#*
+z+W12d?&$hb9LMTP+IyR_9oK7uZD#91C$yanSJ!X#OTM6eEu273;KY$6CO)z7Db_XN
+zs)Y(Zv+y}KEPR1$0+UyRKt(E)?M+8DgPmw%2-RU+w{QbB6Pp%p;?^*3>-!xGcTpe4
+zmcD#xVH@}K=_^)pP(cQL+03oRBga;UprpUU(0-(xmOw`9KAmXc2IZ>X?kLh7*`geC
+zg;YcQBEIt@lS~zgX*v#hj=!s#@sRM%27-<{nB_KU{|C$BKE5VJ@Q2x!+;b{{Z%cL0
+zRZX5EC4I$*zFs(*=Qv1edHIw=1kAR+d0LN@WV-2$u5tBPm88pJH)Xg^DU3q3Sm8Vi
+zovV_{9pRiu{db!wRI90^g|tGCLM9&QvH4zL{-w?J9|wC*pOR?4A#D|e`z9o7tp&ke
+zr_D*L>Y1*1GKw5N#BT>v_G2W2d`<d0o)gU{j<0^5LylYfZ6}3(@Y7C)`cQBE5Ebcp
+zbyqoTvLSHpShWe9c{LAbF~R>#{mbwVk>5GjJa1+0g8Sh47Z88M<|(d235aQ~R{uPM
+zS?(j4!)uANSb#ws`1Ma@?mx%C3mCP<E(SMCT?`pdG4&i~sZ{D=80cc;8C-1`e2RQ*
+z=poz3@5FeUE+=D)zIk1Y_Lw|jloQ79SV)XllFfLyVrY-k(?%C#J&eb6-N!)O#|p-{
+zniypXlT0_qQ;|WJh_6$U8$@l&;Zcx?Jw2h<FYHtIz0BSsoWkok$!Jf=IK`8p`^9OT
+z;XaC=@dn<c8k6{m62C?D-X=Z{;~x}FWK7J@o?WE(xmei+e8)XY{x^7tZ>eLM_bJ*h
+M5?hMb_v3Z-Ki599UH||9
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl051.class out/production/JavaProgrammingB15Online/repl/Repl051.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..0fff5689645f7a3909bd6cdb62d7843c6a8fb818
+GIT binary patch
+literal 1897
+zc$|$@T~ixX7=BI?c0<_m5ul|aH7eB5VgqWmB^7K#X@jBA2B8!`dRPu*$!5>8yFs|}
+z%5laUZ(IL`y`VF6ra!<de~j1adrsm&Bsyj$&+hxYALsqr-CzGWehuIT4pMjnADOt`
+ziI4F~3NhSJa8tpwg1mxTO8aRFQ<zC%7M~??TM2iPD5NROJw@I(W`BqNrNOXZ%>MSb
+z6vILqaRmu1n0R1fiNUz#cuq9K5YLXUG9(IeOEC1598Wx`*EU74!Z%%F(j{qgca;Z@
+zlAB~AsyHD-cPS9Qn|nksd3`ERe2qIE!};t+X_xQwoXfqPTsaCHZzr!$;lU31^|w(o
+zbU2=0k4W24)+5Kwm2K{MB2e1Ucb!P()5f*i(<v`)FAM3b1X+=x%dQB!db=j;9{I63
+zG7Ckp@7UsDol~qshI8eJ+to$x>$*&gnOJ5>m1RA!#k`{;S<ULMsbeh+<4uOXGYOh_
+zXyFmc%3#I97g)8hhQ}7x@x;Q062HV(7QV(~6W>^P3QnD07omks*bJR_4{YJOLS@=}
+zN6ILS0`4!0s3Nz*9s^rR2n*ZTQLdFF93|`~QBA^4qDE<+o&?1>Y0}c>uCSvPs?oPr
+z>M)E1#fho;4K{l0$Xrp4gv<r6QJaUdZ54X5o;aXG2D0Pr=3^>tQ58qqMx#k7c}~{#
+zG7&|yNh(Th9}!Zm!ATO!6y+odgSxa6RcKGz=;<h5NiJ29$QD&*hS;NV)7A}UOaJUj
+ze*8%a9wftXW9c(;JLBse%FrxCAhxD6jNw9!S4Ba3Hjmbvs6uyP#JxxdEw-(=<*-vv
+zK+lSdxSNS&#^;AR_F#6dZ3L@n>G;~LzajdRBmG0^X|`|0@mo0)zS<3H;OI$E$J>`x
+z(Tv@wW1icQ3=U1~Q;SMcR_i{USyanhaCsOCD(>0oBAPK8J9(dbTdoL48;<$2`Tv{a
+z%AqgXm~XTh&DjtI?z&|s5_uEfGK~GN+!!wXw;kTbMS2ITUyNRy^neqNkd&h<qie^N
+zmtenW^(8{1LE<e!t9hTHAV4SH!MhD-c8^$-xSwAkw*CU~mq?VZ9-(8Az?dO0Zzc$n
+zYYL`~7wDWgLh1-z6KU%R=bpp9Xr#OK9l3Xo9HR#~LNDD9pl>KqJx2ctF`$X_trjCc
+z$YWe+HPYOW=2S&-UC}hU2~Bh%iC(H=5GiUy7gc59GU+CXEuare^euTx$L?VO-;>pI
+zimtjaLp`BNF^Vy|cHt-TdXM_hiyx82IQ4Ci?62S|oi~i{FoE~!OLQ3#u94QDMuQ@;
+yKPjMLV$wv+#1xAY=oCNDt^W`qT~icx4|N1IvpJG8)aJXy&1)=b{9I#6<KkbfGsXS@
+
+diff --git out/production/JavaProgrammingB15Online/day20/PalindromeTest.class out/production/JavaProgrammingB15Online/day20/PalindromeTest.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..e59fcd2b790aedf5c7b8f11ebc103a197e954cca
+GIT binary patch
+literal 1518
+zc$|$?-Ez}L6#mvRmf|QRI5D)Pp$-Ia;xwl84=|(!L5hoQ0uIRxz1rAYTSS&zX`N~A
+z`w(S#0IumpI+Ke&Kp&!Szzc8z{Un<q8APWUXZP$m-#Op6XLt4Y>w~`lT)|crQ&=!@
+z-o%A0=5a9^iaExX$MHE<auB$b#TU4oLn^Z7@s)|MO?+eETLV`FGS?l?(W?Su#l=m5
+zwC%T*z*NogRAbQFR>6kccInC0{FZb#W#B~Xku$BkPAG7))|PvhFO}D&>v-+J@2L$H
+z>I&mM>3ED6f2uu^yRz&`uTyU7!0|ejh)w*;|0;1Z=&;UA0*paV_F@4EF)L8JDhO4(
+z5o0EsTDErTvLEX+a8)4N^anvptvQk2nWG9<qKX!#ae}zUfOWz`FrZ*qxQ2>_>$o8>
+zearWCr~}!rE8X?m;Zz2zCcd-qJ#HGfWx>X66L+HZnt>lI+(p&Ij~4EsCUCkhUFA73
+zX+e{<(3N4KFGH$k`+t^HMq@Uqg(QEs>HFJHRO_f~*auc2Lq~VxLu5NMt*#7i5}Gbn
+z7ws(SXb7Z)5IEJ7JIeOGmegC0?$Qdi^fY^avG{&}?Zu>?ALic+wd#@9ACN6SL_2<Y
+zolwmLC3{RTq6559ApL~|l0=S~gi0*bk5(=ZD4$e_7i#M5eJI47q?}g245S-YJDwjX
+zTZZZb$&U@(k4~^Du<$PGc)R|N8i9s=TazvA2YUt{vC%c(-x>6I538Q10^5yFmCgM9
+zFvF<E@bcW1UfWgS!Z5M&zK{<kZtV3{0{rlc8D5Yh4IP!RrRz2wtttlCr1Sqvo4}d>
+z#_?NnoL`^lFU8LcUlGUX(^KZmH-uwLe?q*7!!sN+v2zTwh~8HWKprPKkK+_R8YTZj
+zM4IzfE>+8o)l2(Gr`xM@&yZg(&F$mZ0qdat+t{1uZ(jZZqjUfh*vB~S<pX46yR^KI
+ziKjSDU(VwCIVK`=lIDw8LL_Ge6C6#h##u5;^%I!me2%*+b6*wi$fmbJ^d<#HvX>}r
+zl9E5hC(NTroW`ed#SP}3;TAG@fX`^9P@w+=(yuXTV4gqm3i&02(6ezz&fy{FEK}B*
+V{D37Fxt?WwiM~=imgDiue*vQ?bzJ}e
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl091.class out/production/JavaProgrammingB15Online/repl/Repl091.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..8f6c6f4d07cf8ed4fb2983a3e1aac77aa6c7b096
+GIT binary patch
+literal 1574
+zc$|$?O>Y}j6g|&zW@0l*j8iA1aZ*YgNYW3te3%xep^YJ;lKY{$DhoEeIHP3Z@r;>y
+zapL>|*08F?CS7$)S%8!U5)!NKE3xPTp#l<uKTuVK^Tw`{s?&;*?z{KhciwsTo;Nf1
+z|K0l$z&R|ZVPZOk0%o#I%%w4p6IlqHGI82OQNUPmJVz}G^v%xQ5=d73Ra;=V>Uj3m
+z&E|?7+>|RWGuf(Nm+mbYIC|boCe^wV3Jg^PyX6*da5!`RY?=9{bUcC4+0UvQvMr0Q
+z^wx?s6*%5nS)U>tT7~A)8Z<@Y2Geib!6ld3qzu-`JQ71dXq&b}>(I7oTLObMCF_kV
+zvK5tPVq73y^EZRKz3k{xtzLDfHJ^n6q)eQ#a29V1WR`qig({G(E4EtqSHocg?+oBw
+z3-6(1;(d!so*%#mdd}mm!`*WCL50^=Htf23CROW%%5G9#f0GNjZaa=&yv|+}JF;c7
+zoW=q!2qc6M7;DOgUGcrTRG&I(ol&Tyr$Vh}r7{;M$4Cq(wQT8`OI35T@wbrJ7J4y`
+z)Wo80c1fUcu;zGezhU<v-4d5&UHL)B#7BISs=nXYY*C-fo@WOYSB9a@x^EvozQ@tk
+z`4j1_x^`ITZY)1v#)~%I?6m9{_~DnOdllum=P4@Eb!(2Y+2qFpGykhLfvK0{a2y6d
+zHT@*`dGYn)nC7fVFX;Q{e}K3bEx*Fih?0G<I9go*1~EjR!Z0%3&50rr1I+!CX)k1U
+zE@V23ne9?CvsLQPmyDb-aR(1_My9iiLcV0?OwK31Ln5Cu_qY+?BbhUkt6!JQyZgV#
+z;3i*y+up_WQ`}MFG_3zw*dK&#?PBIBEU#hxF?^3=&Yg%qS4YO({S)^hVYEmA@{uro
+zluN6dq8Ni5U!^!li8xN_=9xK1zeMpaQ@R@z?{oSMqP{>DI~c*2^k3l!ZX<^~7{#~r
+zdl<t{cn$Y4j$i11Bj?|kjxJ<}V*yiS$nw-Gqmd|5m?VpizQHka=;&vzjz-ZD@{BPu
+z^o5aeJnG{wR;quv2L8kZqXg@J#J;jz8^o_<%p%E?9+D@^UXMlpZEK%&ris@@^Z-vV
+wEFNR>2~r0x-*r>H<YO}TQ4{@&y@5;gX`cHbD!9m6-sF6UD{nD38;vLb0|TUAkpKVy
+
+diff --git out/production/JavaProgrammingB15Online/day20/WorkingWIthMoreThanOneCharInString.class out/production/JavaProgrammingB15Online/day20/WorkingWIthMoreThanOneCharInString.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..8a4a000391944248b01aa8cff6fcab50da6aa423
+GIT binary patch
+literal 457
+zc$|$;!AiqG5Pj36jg8gTR=j&MRxsj8P`ng`LbQjL_TXugF3Hw(18XYyS)K$Bet;h(
+z&c=d*f-cNF=Dm3{!@j-0yaG7Gt`7%09=aZSgvN!^s=OpP!QqtP4vM)Xv?HbE&1xA-
+zGZAslOgAbLkxzwDwqBENnW=k1Kbnij)01#km^-D@*|5y63nM3)&?7AenJ_~=E)7fP
+z>{$w>346h9v=9#>%!N+FwOU;uOv*ERzsLlCT&zqYuaw<>@b|uBJEH{`bwcppBMF_a
+z)uVVJlM?%=@vqre1KD|;8(f8q#8~e?gPtnc<J_o72OFGQpABfjXKZ4#VyyXy!)iZ_
+P-Zvv*3)>a8tFF!mO?+i6
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl093.class out/production/JavaProgrammingB15Online/repl/Repl093.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..a3894af921cb62b343f4cc1ee548ba6b418b7729
+GIT binary patch
+literal 1027
+zc${rgZBNrs6n^g7ty|ZPu`xu%7tm=p83n-!f-i_KA=!{PgQB1AMjgejUAj*3*J%9W
+zXZbJ^P5c4=7=M5<#B;kDAg)Qz?S1ZZ&hwme`}64A4*-jJs3L)!f~zrHgRUZkya)vq
+zQ@Ad$=_raSW?%?pHi|g~Hx$e>L{==v^6xT8dVY&RUUPR$hM}_Mm>ZpD&Ger0noUT$
+z?AE!x#XU>x`=IRaT5X18*)v<V@r=Uk()=>vO>Q|1qx$Re9)HITn>!7o>U);cSQaYG
+zqIaEm+-p#NW&n+xnfq4Tr(^btnC&{JikTj<<6E{-CB!j3A@|<(c7(+NRT5R7*WXrn
+zE3m9!fkCah9j|UawnPhB-}Q{h)sVyx!|;D13T|pB;g%pQYFNT;4a->3a0fKH@EdNo
+zsrEe$_pz$s0oKH9ypE`Uax@I7V~bB~duH7~1@&B?hCZ}?v&j$=1I_k2v|MA|X?1*}
+zo4iR)j_Csrf(v!beG(bb^8;sWn@+>u4Q`+ALvlO*NtI2a9jjypzzj-D>}=sqAAH-9
+z`Y!iYsj#fC=hrX^jeb_~guukWDW+&=(8_2H7Y@O`2FJq`BRvplidz3WgArO|$YQjg
+z{0kD{z_zsV9ii<5NQaOs(_Mr&id{tHPe>j>Nk_YgeL+bo$yr(8pHV1EU8t$Ok4O~d
+z;HyuK2h{k#EMZ6r49y@;Q6YO#>LW(R;ut4uIqGGOx_Lx~D#Y9*n=f%TFup+Mbj;!m
+z#vluugpUU;zQ8$5P!kE1aUK^4N#hAF;u5J%5+jT75ps;=6iod=h)t-!Nu1$wkbdPa
+DcTCkr
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl095.class out/production/JavaProgrammingB15Online/repl/Repl095.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..687b81d17c14761ae73a8bf274898a5acf3d4bcc
+GIT binary patch
+literal 890
+zc${rh-A)rh6#iy++o8)A3hhEws(_+fP!<&`wMs&on2=O4)-*BRI9)bnu-!J>t<l%;
+z5xntQE=r;a58$i#2409~+8R*1$(}RwouBWVGc(_ReLV%RjgkoyiyTV{EaSQf4L6in
+zF>w>O6y})7W0hl#<2FP5kql(C!=O9)8iP@8ANUN@6&d)?dab%2z7+K)A+wdXCz>@8
+zO0^$>Msz5<3{#cR?=;;PBsPj$CBj=m1`Kn~>&lUMC)}n88g4ZTWzZ-o7AEO0lb;A1
+z6rUdBM#iouC`o!~>qWBZRtX9Gkc_czB*KWQ_Jae4WHl1r+oz&4sEcEs!K}7>q31u5
+zs!nTE+PX?*VG<U@%ztS)?pRods~k2g+{HbP`xZ8_Wubrv9NQL(cu46kw#$$@FMhv%
+z<a^OyQ1wGM@>>j=nutAYMz-C(pwo+}S6{TKovbs~FgTIGe@_`RPJY~wQvYIfqTZnh
+zcPYeh_VP4jz1@p0GCwD`bLR9In8w>tJC&lGuVD!Zx>M@Yz|{0eCTZuAW~5`QCtzO&
+z<|&f#A&6;`)@Yr=4Cw@Bksbw~LMI$3euMVv82Sl}%32>Wy^r|gKZ~7(f?*rEPq2@{
+zZKIC~+c4gIEEu29ekekHKzJ3LB&W(IkRg&B)McNfvoz^JBnO3T64@fMWVc}`TFhad
+swDQX05*3xf3NDjXqxc0}p_NV=3OS?D7)OpnV~iU5Nui8rRmazU1Ap?g2mk;8
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl097.class out/production/JavaProgrammingB15Online/repl/Repl097.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..95829eaf5a32ca5a6bdfe0343c25c9d80692a65b
+GIT binary patch
+literal 1244
+zc${@pT~iWK7=8}Buz;%~2%4sS8!CyVX{OnSWsx8zj*dCgv@9oBgN2r*?A||Nw_SLh
+z7dTTh{eXT_7ukCjX4GlhnSIZm=ly!#=bZiZ=lf3p_plK}4@MP?1u%|85FXqTW+I3Y
+zB>k8a>uq7~2s0(jv@mytnGs2|K`Jw+;J$)+2H%2V8ulWC6d&DWke8|j&d{AUOupKv
+z<hiw><;#SG(^Xw7Z)%ny_H9tMOGcfcD{b*wIk`?|a&DH2$`#Ep8DjCB^se?%OO`dW
+zn9SLhVHW2_7iQ3#qBzYeQhvlGjGT2{qau-(uVEYIWR4J%Tf+INY83=4mqf2#ZJ0Jg
+zXU^92_Zh9`uvIXuV1Xf+t2Qj1FB@V2was}#lu;2zgrVo3ehMC_Sj0mS@JPjDJW;WP
+zr^KR__6*A^p5ujz6ke)WL0UydU@KTvk;R&VS1Q(#qlRadVhEkm&*pczZl8l%6P<@X
+z*KJ;5@CbdQt?7+wGG*2pHidJoLIU*1T^-K(ntYF%^u|Zsl=GFjS+q;eWuW5;)@{wQ
+z>sy9^qH&kAe9hq3tENrIP3JgxHe{)!Svmfp!A+ezfr?=k_+Iwie@aomK)sQ#w`Y#V
+zQ?3;K+$^*i#o{UV7^&K@&#JRV_^CP(7ns=9#I8)L%G7xiR}i8fO*|ejaWTmD(k@9W
+zqt!ch4ED`&N6GqHAYx?I_IDrpX${~423pCi12W-&@dKXiBS^=P)8kEeGt#0oBS+;#
+z6TYulPK1>v{9m9tAAtkJ_9d2ZHbLLpCOR^Q7<9Jk0m8y3wVX|KX7*)vcyfG%uAwHn
+z1wqLnID<~IesmC_5P~#O2Zo92B;ix&qWc^|nkLSYXNP<mWtE7!7-*VEN69;gi!=by
+z#}MU$qTb*VF4J%!Y?ESFNsKVIaE;<5T&IWucuy$RtKfzLkAe|K(hP+Aep5w;n~r?(
+Eza0b&YXATM
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl099.class out/production/JavaProgrammingB15Online/repl/Repl099.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..090b13cf385a1f91fc9d5f4b43916582bdd29eca
+GIT binary patch
+literal 1198
+zc${@pSx*yD6#i~!Yo|jgl(Gtn8wD!Gt+KlyNVNq*3C8VVTE;Rsoi?+$yz?h~H6}jG
+zLrFC82lzMq7e0vRwoQOIHtBcoJ>OZrbMBp=f4=<yFoR7MaZD(fj3A9`Dngjzkl`?`
+zVhq<g+~9DN!!7Q2JB+M~JD3S$R>7Qtc?NmGv`ue`K}e17Fo?^wU4x-BZ`#JXUo9EV
+zwqCNx(w(oBb!$g=Onz<~MQ_h^8De?Is9TvWg6Y{=N-9=$(`M*Ry~ywDZ}p6&+m%ew
+zb4<H3&#N$#{yFl~oeIS#0^Epn%Q_`Vv^d{0txS<Dw&4&dxSqpB1;jB5lFBvT_9(}@
+znzPH$QS|ikn}S|%>Q*qUV1Yp`)_kXIteU(Pt*w5FXVlPzZicRZDl1sju!OtZ;hu*3
+zc%We!4>hb{Rl}p!ZcRfDk2O3&o{z}!sbWFHIyOkyYu$2rxziJ4h@bSaQQ9}k-WgM?
+zwX>!Vu4hykLVV82))>rMCTG`ukK7HtN|WeM1rp7BwvG2xq$f2VG(v^5IX*yo6?9J#
+z*Dtwk5xuEgE-*;847=j(k(^YpgX(&^<GD}GmQ%pfcuoatzIVE#O=3<uN(7imZk?Yj
+z`#)KCFp5t4T=*{p#_yIeL8lC@j8<vl2<&T<?je+0MkEQf_P!T=v_{a6fmSf<g8+qW
+zuf8Mn>=42c#QbCfQh`8T60%}i7;ZqBlZ33Cl+z7_KVdMPlpBZ)NDZhTAs>kBKxSW#
+ze<elnGh&B`c54lEd_k0NW3=U>gr=x0ItUd+5vE=uBu*tUQCuL2Y2xM(!y@=|jMMY$
+z!ZwL~NwRqpYZP~hJO?pE&5>lB!!WH;Y+(fFsi8Ou#E;SdlH`4n`~=FrLQz8yiCM&D
+jVkKOms1ZoVL?{ZbDhMeUV~hhZ@EcNGp=_z<D98T-k-GY<
+
+diff --git out/production/JavaProgrammingB15Online/day20/Get2SiblingChar.class out/production/JavaProgrammingB15Online/day20/Get2SiblingChar.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..f75366850d03a7d7597112e711d98e58c94fb193
+GIT binary patch
+literal 1196
+zc$|$?O-~b16g{tBQ^rBCP*AK03fNMhh~E}a7=tz`YEps=H@;3^+M&~#X6BWod$;ag
+zyK#*ROj!5>{0;sR6F=@un*cHzo6NiK-Fwcx=iNKguRo8z0Jx7QDh6;RiAfa`xH^C-
+zO#8cQDT>aixPh#KoPv3V#HwkVa-AWX&FwP8bf+d5hRUWbo_AVR;qLINMV?gIF}StM
+zUDH4JoiW)kJ%;gejdxd;3r~eyshCyEwCj3<yF~)DxM?$tWnY)~_&zUK+^!cY(j`RE
+zFUL%JN`&KXof3_Nz$j?*R-hmxHdv9|Xm0a%ph!WUL9I9)*AQE#uW<AaO-p_b4Jyu2
+z-VL`)`voj2Skh3yvWA;jVHn<Y9O+4yx3`6CI5lr5fm=!3)^G=R72MOP!w(qJp|>Xb
+zvCbFOJz>aGuAX#iyd~_qYy^!jokny$DOwb8Iz&zPu5CJnmqe6A7raF`PZ(5eg8;E?
+zDW|J=2y#Xkqj9u&Q|OLuaQVuV4cd8<+tTyrpzFD?HjaeUU{Kor$)W+Kvtjd7u<Ezu
+zF~iJp)U@}Vrs#uuDz>;G9k;7slVq12r`c&UXeHYgu5NM96C~~Z$qM}(z3xBbcFhvr
+zOpjPRE97s)oo-u%z)!woz4;V#XH)3hvMQz&MFl#;?0;!vnEW>m(@4^X>Hi{N{#!_^
+zMyCQ<Mm9eG8SEek57L?loKc*oRqFvTgkiD+xPVlj{Eoa)vWuxmIl7j~A0is7eZbTw
+z#PXR##PgZh8!|_f4u??QM%c$+-wuMrevvVvBS?{;<O=4<E|50A=oES5^mj3WQIbR@
+xkS4s(oX0pWl7LHrw8#&{6-==2#E#-}aDfaSkyQz^h7GI}@;aT9be^GS_BRyJBRK#7
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl098.class out/production/JavaProgrammingB15Online/repl/Repl098.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..d4ae2aca182123947e713ce430fed2a4f6ccf112
+GIT binary patch
+literal 1032
+zc${rgT~E_s6n@^d+q;$WIf{Uyf{FzOMFa%-@B<|w8ETxts8{c1Gm2fev~P{x^C!IZ
+z#%sA4i6;I46Mu#O!VB@d+Y%tQNzdtd&ewC!>CeC4egIg(wt;Tk;F!$eCTs&KOeryK
+zU;;Br6tb9AdQJs62Ig^#V}au~LuTCzJh{oB*;9KA`d0m|%g|f&0{2N=E4$$fQT7QL
+zDAp^&-xHyy><*~QeJ^6@DTZ#tcb=1&UtL)vye7PWVaR?{JP_}N<BOo`lw{}y)iu?H
+zdGzj3oCvFwpHB!QXH*eXB;WSM((|1XA%Po`Q;TG%NG0T@EA=>#4BaIuD(`khqeYfu
+zlw*;>DAnVz;%<A2zuBQYr^=Y<K`%r9f9*JyOf2J$3Rp3*in}J(ux?@lw71m0XW}02
+zn|OeS99t$H;W3pyyAp=JQ=(7H2W~~4gWBBBLmwmQ)~LK%q}86&t2;YEBbF5IiW-eN
+zY$rO@inD?HL8>b<4BAskd&>B3P?h_w%hN4#QCyBXJS=-BF~x|a2xaurQ)!l+aNO5a
+zt{%&?l%J93lyW`+X5bBF`829dt@khvlYVLSq`=f&NcNHCkY=RQ)5l<6Tkd|6nKp<4
+zl4j>Sk3rHoSQzRg|AIz1u<;$KS4Yr}p%-VGNbhQ!+Olrxg(fneF<P+nCip<MiQFe-
+z4mEbDvo9yVk6?^7(WRPdt)`Py9N_3emdfX-xq-`M6^MdE-%G@Loji)vA~m*f6&ElJ
+zT~WXYMoD*J0T*$pMQ|2ll%Jyb8C;<_jpCv738khv#yL_P6O6_i`9t*>uC*3${U3)-
+B*^vMM
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl094.class out/production/JavaProgrammingB15Online/repl/Repl094.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..c75896473583e3c439babe02cffaf0ab9febb4e1
+GIT binary patch
+literal 1936
+zc$|$?ZBrXn6n-`@?6M630->oWrb;!Gv_Y-dKwE7?vC%*&L9o=fCD|rRHoI~6ZbxRE
+z@rz&d7dU?Q57-as49@ri{7cSQpSv3^9a6_k=G=SFdCs}ddD;8NU&p@#xC&Rt6iO<V
+zM)4Nj))B)y8m`F0yBPw?I##eM)z_rBo`Hh*HGH7qrj8<RNl}qvEkpCViVs!XQ804N
+zax8H}LA<cAs~}Nvo2G*Cn&p_ALHEG)c8mj?noP}Y81}B=S@JwkCPdrv6{KsP*|SUA
+z6iekRtJHT5%TX{>cu+eu9vLOua9X9h@GPgb8s1`fE&5FjG1KTb3_4Fmwm?{RsZNb!
+zdNgMIw%h9wShIY=3tdl0Zo|S@!t5#-ZMcCWEGHn{WY4o2T$MHMLp}FZ1-fvBVQ)po
+zvAQrCoeiTG=BQ#$g@n}Iz-yT6mP|V}$n>(jHic<q6-=IDtKy>+K1NLfHWVO*P25#5
+zam#guFFd2SVT!if^v6fArQu!*+o-G9N#PUhrm%-kQ@D?P4G*N{GdkXEHuJ8N@4B9u
+zkCKZyZVI2{ixj@ZS1A}c(9n?ZCP|*`3B8|{=<dOx*$~gEqN+WwI`X4CWGAyxg)O&K
+zb$Wpy+%&o@a;`AcAbT8l198%k<#qnC>oD<9!R&2Em|m1i-f)`S`T4L%D|rQHyGF;X
+zxK6_mdzNT(=L^FToSST+x-hKeQ$y}jp!Vd+mRS^DFpiG-4Y^JihDOz;b<GXJiRV|s
+z;h9#dk~3N6w+3{JWV|vYe)Y6!ZRj-<=GTE?`_-1i{#Fd%d;#BmezUgev_v~(!`U45
+zg9Criz?njIcx}=<a>oCyt_(hmhl-Y*pN@k0XEw`u<aW#fB<jez(Gae8q=E$=skv?^
+z=yBw#a_%d(;rk}r^wUZDgBa1w-(j<D)1QwVS5MP;k>k!$&m00j`Hn=>y}EEZM8&Y}
+zI){x(au_cBFK!Cv{u_t$$nag3zZhR!z6F#sJe9cet4H$U6DYri=ChO|krFw`7a`i8
+z!%JL8F^iWYXXPQaI(0w(hS>ebh(AH1mPu}8lAD?2N+MlOCYIH7S$m9;ta=O;=tEoV
+zV|0^3FDG+aF4-t+#jJWMmpsN9V1v+1YJgfve6K3!5}C0+(mzAbsuTJzPy0j^<HbJ4
+zlg&OR2&E#Y9b+<#E;ERS8El5>s*I{3P1ciSn&m0Sd}c9*IgDcw6Ih~UnZ>zIe3hQ}
+zh}dJU`^>h3SMV*7Kj77{65EW$Y^j~&dIsN7pJy%7M4iWLtlcDz@H%&K-W6b;y97Nw
+zT)-Qw)ht}Ri2_;8!Nvl08ZI)@9AZx?G!=^~Vk(N!Kd!`qKT%_}OJQd&<B+S)8{71^
+T$a0zIY1-eT?rJD+g!1;^(OS@^
+
+diff --git out/production/JavaProgrammingB15Online/day21/WarmUp21.class out/production/JavaProgrammingB15Online/day21/WarmUp21.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..4ba49975a2b4e82c9c3caa637d35f9f4208b0542
+GIT binary patch
+literal 1220
+zc$|$?+iuf95Ivil6XRY;Z%{%>A#KwZ8d~n87idsLq!f@+S|MK8B&)=YV@LL;Qr?mH
+z1)h1~xjYo94}1Wh!Dk?G8QVc^RD-bO9nZ`;GiPUQfBkv<1;BkgQIWvqIHpug;z|N(
+zOuJ84la!rRF^8;zc?Am$u~psF<vK$+JHN{iDOfeZFjUe_@vPIT2z!TD42mR6R+SsO
+z+}2&c7mUb;?l26OYP`F$oZI7e>t%aoIZv4u*G-1;?Ca7#Kj1looAq2-+PYcKyM35W
+zcad=1u2Y4P02n1r-tt-p<Oa%;SDV|s?MYFv$e@<3j$IX7x+`tqkC-KwtU<*&hSBYA
+z+O3(^o%AbVHyhmKQp0uJP_U#ShnpIfu|hlAv@GdJo42=xY*;mCD27{c+}3ahcNN^z
+zXvPm12K)C-yc4C*EBm4<`$E2Wnz<p&x@>qeFZLt4jub6QSRJB{`5V`*+zTQ~q6^-l
+zy(gSb#p%@=&lZdGX9uL>AqW{_bg~mI-V_DPta7=h%LY9;lADsoKAR0VouFxt1PEb>
+zwq1{O29?=Wu<DNM5kuxAtD6T_Q}jT-rY&BTmfcmbNs}pAR<qM)(2Axh?1I4^N089>
+zr#tj&_$Tv}n>9l?8K0OxE97s)oo-tMz)!!3{t@;~q*tQA4Wq0}kylV)nE5Yl3{(Hc
+zVH$DzY~3pa=DxACYUJg}GP2Qy&tQjMdVtoL7Yt*NR?P=s2*YF(IFDqH{EnhwvUAB$
+zDZG|iJVN*bQlAi6Or;`kju1VjLO6o*HpD*u`gZ7*bjyzu5gs{4ew_XxG0c)Cw_Tc|
+zQPMktQ4&MNF-CZonZX1uQ0t4HsL&5Y6-=`49^;ZHJ%tUjDq+^}80&<*Mt+?94Ba!o
+E0b0i_zyJUM
+
+diff --git out/production/JavaProgrammingB15Online/day21/SearchSomethinginString.class out/production/JavaProgrammingB15Online/day21/SearchSomethinginString.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..09e6a9bb533119e8308c698d01e9a4068ceb8517
+GIT binary patch
+literal 903
+zc$|Gw%Wl&^6g?9=aT44%Bu#*lkTkrUgw}0&RRX%HgcK<)NI{W+4HI{ixb>s>fz*9}
+zf-M`^mPL?Q@Bw@VpTVMV#|=W20=9gw=iK9a&fM|$)34tEY+^HyJnC6A@~C22hGrJm
+zWxkQaP29@kHVh3d4Q+<ZW81T%Ee6GC4H(pIe@`$h^lVS;#_muAFZj?Qq}cN<?hJTf
+z%k>mgqp=+_)O&mUXk*>%3m#bGzV8acy^-zpqk!@wBD&o67%Il=-adcFO^16Ub6S<M
+z%%-PHJRXdwVQB`9iXL|pCo^hk%a6T?VXhx>>tKf;CJr@p81j8T4lME1mX53c@VF{_
+z>bL-%VR7fEA*C92*mx;|gE9Abq~i`&bgaT8r^H;tx`quMcX3a{eH{<*kfHY9IWQFd
+zI)66Y7glr*`oqdN!W%{7<Va{HxiB7v(^AFgc3ZRdUl4C&?u6Zu=Lce&hqTqQF=N)R
+z&MO{;k#I@KkI72;jBoqqb0SCdiQq2vF3o@$v_rXa=u}ms+ZtdQIr{D7l>(E4q&P<_
+zlQN^6ZhrwgNy_sSGYP0*fuep!Kmivi=TJmx`tc{IbOUR}R8M)LY}GmwC?8Pm)N1OR
+z3DjbGg3Nnlj#KPdVIP0}_zbN&LG~o+Ep?j6CcPC>OhY5R9O`7WN$&<ROhTlGHtA@z
+uiA9u&ONyxAQqpAwmvM#sq|w0=Ra3Z1_&k(TXd0@FE&Ze#9e%R6Yrg@%X2jV5
+
+diff --git out/production/JavaProgrammingB15Online/day19/SumOfAllNumbers.class out/production/JavaProgrammingB15Online/day19/SumOfAllNumbers.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..3055f693a3e47cdb93c2599116e8638e37cb3f19
+GIT binary patch
+literal 625
+zc${rf%TC)s6g^{`7~BK`;hCf@uSH;i#jc375<;qkl$J`avgxLi;D!M|kmDe+Va1=Y
+z=o%IvvET#v9d?xpoN*$dR<Shq`ks5{+~ezqr@MOqAF%3R1ao7U$AW`0DmJP%-U{UE
+zDpKhu0kgK&6tH&V17BdGp(6ilFKqeAci9SvOf}-R44N`gx*mX5dZ@YrbBzOewz=hc
+zy>S26P7w4jcDG3grHTY*Yd;!C@>IHkj5@BDCMxP|>v2Ny?2#vv4uwiXXe3af;H9#C
+z{6(G&COcl-OWOWtrHkqR25)GQJaVvYyvyS~7Hur$v5XagnW0t%im!wBTStC7{Ri^S
+zx~U&>NpX*jnZ8REyWeOrrBPpoG+G)03)m;R3iuILZEvlKC0P6w`Y|B1NybrDF0)`B
+zS-*w2%GzU$xePSnFy{LNyx|+zEns|b`J8N%xoXzUkJX}ci9)6NvwmTS-_MWNFe*1N
+zuQDC2S*EJiF_;}17-yblr@~6lStQRw5feOyR>dTyGDl^Uh;ikt92kFL3Gs(KE+y;F
+Fz5tBpd`$oV
+
+diff --git out/production/JavaProgrammingB15Online/day19/FindingTheCountOfSomething.class out/production/JavaProgrammingB15Online/day19/FindingTheCountOfSomething.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..fbb3962bc49261618d43fb6691827a43789b7537
+GIT binary patch
+literal 669
+zc$|e%O-~b16g{^ybYv{HP^k(P+RCE1aN<q_x*;JUsbVsu8&|LGqde@)G{e+{Jsbam
+zOE<1@Aqfk90RM$QK;p-FLla|yagurW-gD18_q_Kmf1Y0ec!4z^Gk7qIhj`>;3CkYp
+z9v%ydn<h5dYk|{V?+V<lWS|A*j*0c#Nz~Knp6ZQ=EOe5-8g*4_Y&`|t?7$oeTAhJ9
+ze*QApHu1p3!@UE&l}zGncRx%bO-el6AU9Gb7S!7BJBR9{3Pvg(24R-kuAMA~{|<R7
+z9a6J;3ylOS%!Qfie|V$DQxkreOwzvIHnv#(w})p|uY@8z4=W|CqT!)gLJLm>jsG1$
+zQ2AqLw|A)f*<Vn2e3a>kx0p=WSiJFWlHeVUXSA<XMEliSV1YNb)rd!P+dJ!BG~x2C
+z>{ozTzg+LI3K)fP=II&aG;hyxE#{yDpKIxcfV<4V?i}t-H-94AVQe{@?yGub@CDU+
+zr9A$O;)%#fLB9UF`i8>tcQ~iHnpIxmXscG>44?TtmF_cNqI#3sc4C8E7d4boA&>fG
+aE#%%Bs1g(I0R1>W;EI&5DaZTC3ANvaIE!rn
+
+diff --git out/production/JavaProgrammingB15Online/repl/test.class out/production/JavaProgrammingB15Online/repl/test.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..03395ced02b1499bba8ec12ed278ddc4b6828035
+GIT binary patch
+literal 741
+zc${rg+fLg+5Iq|w+1POlB!!0F2o$J+7WeW}m9{TcD@C$eq#z{3)5cweMb0{M)(AeU
+zJb=_n{Qy1+b=HX*RgERj?3~#-GiU6Z+n>Jyyu}+29v*Q#cJTx&9!hB2(`pTC9-d;|
+zA{!i=9M2f4@0C{OBZCuc9Ws<ZrQapPT%@%8nh$z1I}p8ukVcfoA~_V9vhf5gn-eu+
+zs7IL`CZUldvq#`SD9x}G97m_(OoWNh{jh5?rTcqD3z7Ays5v9eP*HlA8_JH8xlu{j
+zjfK`SqpYLz0R!tWc-=J5V);ecF<jeu*B1Dw!)I9dub3n7v4w4WVaLaFydX)RwUJr-
+zf|%O6(E5&J*GGt#K3?H95&zZ2Fh8C4TkllH|3cl1k&!f8$x2@w53ka&W7Uv2DF!rt
+zE0~$EOL0=GdRn+o`<NCsXTS`6Xrsh73}&yIYk6)u+7w^6gH^cnXV|9%W;aFl4n-k(
+zM!vFr4fdl*-z8fegP0@hPtNmLAn&4q=A<}=gBtneUnm`2!nsB{x<sW>y#n94LhZwp
+quz@mJPMuvU_s}9*OWr05BEUT?lCRU<CEO?aR`D(u(>^Fz9{vFXe4N<;
+
+diff --git out/production/JavaProgrammingB15Online/day18/EvenNumber.class out/production/JavaProgrammingB15Online/day18/EvenNumber.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..179bb390e174e5e0d31c3454126c8f9a4a65f78a
+GIT binary patch
+literal 593
+zc${re%TB^T6g@)=l?s9&pgeqTz=e%F5{Mh42?;(D3>#MiG&l$?mO{eb4>4|B<3bY`
+zet>`CFBqfVDI`Q=leu^9Ip^McI&WVuuK<eJ(cwojh!j?JtRbx-qan)>C<{xt2MkKS
+zP-jpN?Uu<9sS3+H9rhZgbHN*3LSj|B$-8y#2wBfS)x8n}$+h@+zi1qdOl#UyBCf}U
+z#gNQjRy%yejV`y^M$L7E)h@|ROwg&2jyr9d5&uWV5U#nrd40nBvxR!i9y(3)SjZwW
+z-?t}wLkK|AkPBfQ8yYr4*upkL^shOB=Bv&c9kc2Ff@<S|Yxd|x>>&|}sV`w0=VZzy
+zYbNiJwfH|UgVvW-mwsH$R|<7<pwhd`&j%*`QCy(Ppv)-ycb~x~9v!3@@IVDR#n4oM
+zMY@65FqUS`H>CDa&MD<gv~`bE#@|=(pg+Qwd4h7w*u(ex#2X}sCOrp!Y7HPl4rHCB
+ivAV~}QE9@X-ntx?5u+TZqeJ<GkHtSo&#>Z|O#A@TL3S+w
+
+diff --git out/production/JavaProgrammingB15Online/day19/CheckCharacter.class out/production/JavaProgrammingB15Online/day19/CheckCharacter.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..fd063be76cd8734f725b0821f62572f22d31a145
+GIT binary patch
+literal 1219
+zc${@oSx*yD7(JIR)7B|qOHmPU11+>#>w+MNOBKZwF~MM>CVD#zWwf2@bZY9WON`M!
+zpijmZp7j9}AN&D6`g4p?&%I+@l2XcdzvX<}`TFI@r_TT;F`qyW4#bd6U<6|^jH@@N
+zL|%!5N*s!z5XWH@V>pt)Q5=imxPb`+Cj_E1j_dfd0-@~KvOu`hSg{3q%8qMaY1J#X
+zcTHAm^rXrSOV*a9=P3KPGwiQ9O@aRMihNX@DwNi2>t1P1deZW3Z<_JCbX>->H_LbB
+zLs_Uvw^~^8J;$w1t8T*K|2%QhtFlhI1B^je*7X1#Vi6T93M4G)ml`dXZE37Ds(*~+
+zk}s`$3-Z1m*}$NINkWzyEzh#&9JNLI|G5vTJ|=pxRlsbw+bqq3lqRNdl0<2B8Z#zN
+zVb;WHoH210=NKW*K*_{;Tu|hAEjFApaS@j|>Z+_Y*{!b=R|36%w_B{-wJrZYSFkXz
+zRkPiyzoxH6-eOk6^+_?g+nN1`A60kBe$cXA%bp&)!F`*)^!(;^N9AU+9j-x;;kYYy
+zdvSFW1pCFCtxEIvD4Fd1Sf`WxJN2WcZ`V0&qs4VH0orL4t`h1q!IpI<q&v7d%zb6m
+z+)ajA#vXL@m#;ou5b9c#DOv@-f^TH}BgA_hPE$s;GlV`$GXNlie!g*R!}cIqNFt*2
+zy-IbJa|@x_&_p;i5y?by8wkBaE|&^#Ao2#LR-&(wei{;i*NEQPK&<>UBG!L?)j9bf
+zC!dN3Ia<*<VUgEHkh2iv3}wP^(ft95)RqmH>)4{yB-QtNZneW@y<n7<!Rcd^aU}TH
+z&yBK3B1cLlY0r`jg}ueB+uXQD+rv(@F@z`Bg_qc;dAP(1NffaI1FU!UkH-Cp9@Kqb
+zFlU(TMDU!M!(`LIGwdcV#7>WSh5>}Jm)KDxezIKDz&-;b{0c#u2YS9C@*Q15E4>Cw
+Jjq0Q9{{^zy0w@3g
+
+diff --git out/production/JavaProgrammingB15Online/day19/RepeatVariables.class out/production/JavaProgrammingB15Online/day19/RepeatVariables.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..e5b2125ea013649b56c82e020d0df4d54f27df23
+GIT binary patch
+literal 971
+zc${rgK~EDw6#izr?X=4xw53oKw5Z?~v@3`eq;MfIX;PI~)5Lh1wv)QpZkyeyk-PuI
+zgJ(IEL=%4if5y89@l9Jp&~CEx=Dqj5_rCdN&VPUV0bmCu3pQ?Z+)3arRxKD<)4O|d
+zI2Q6)*O84l?rY}(M}fm-h?P9wQwIzYCtqVQ54%mtFjMh-`J&&c%iy)Bw<(gUbQ_{w
+z6M?7wanMxnypUm`(iA6~yY4I5lS2K)gnI<&2+wDjcivWx#RuWGh2L_kD)9W)o*u_M
+z`pbk9L5mutC%_n@p5N;$%8rtK<+a^vL-@W7C~JjE1ghGTvdIvaesjE?t}4-Z|6KHj
+zTsamATJ83OhJ5B}?sNaJE$HSprg4oS`QIRphc-5`r2&s@Y~wLQ_NXmID09+RGRO^S
+z<U&21qiEv^c5Lk8DV_cbju?(m8bbUt6SZTQy;S05{a7~Cl~DC0RI<ZhXn8XuVZ5$e
+z)=H6ZQgo<w)|r^l!biGV(aXXk()zM6Jt54%d)jO3fzIUX<i7l<%Dx)DCVj0=IbXvH
+zrs!en&j8Z`(>g<*OO}z1uAhN@9j0e#jg5jx(rS<QDWu6JFo(>z_#6?61N+}$yg5bW
+z3})pN(Nt^zzA-?2UptAhbFfr2Gv@MVBq^FP2e3Yw?90VZJv1^Lx<<_bPE6x8DuFC4
+z<j7kkwgo~I$(AUiNo~_$hp5bB0j8!v=tZ(q*ur((Ac9${TcWH%Hj8E2MR1c485kE-
+V8s)gfVK7FA`$bI|jnb!I`2&>7(Ifx>
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl068.class out/production/JavaProgrammingB15Online/repl/Repl068.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..becbf69a4b25ec1bd320a6eba6d985e23919f3ad
+GIT binary patch
+literal 882
+zc${rg+iuf95Iq~aac!11ZQ9U6xby-zX<D~jN}v@lNJx=PK@F;ecyiKJ>dLVrdyPQi
+zr|3f}fy4*!QHWW`QVQ6XX1(XkoH?`WU%$Wq1klEzg=@HD;I4^#ShG;Vx(XW>HgR8t
+z2a0%T!A8SC)4&!(`Opu2`I14i8z&6<tLRiP%)5Rlj?!UI#P7XcK**vS^}XQ4i+#1v
+zL0z8t3B#Nli&5YlQ`p^a9}qtD{E(q$e{|2iPo5Ka;lSz2*bfH>Sr;!JP+hfvCNk-J
+zR9u~Ksq_P<OGqeUA~pG0Dl<iOMC~zH-6)Ow;<c{~^4!yo%IDy?&am*Gu7MWEHg;5k
+z!?BA!1CKZ!;|a%8>~lOr+rV><7oa};>aYxzsg<|AbJ3T7LESHj6hnrRI*;XvZ9j54
+z;V6~lTzErLT(Jv@?4&}W241ooMI%@K#ppf*5f0>8cAp&vGf8_%PSxyAr%*<VQhC+g
+zJHn^#ss%8EF;crgO=TBdGS;B}M)j1y)X7tvqn$%5qjjcv3HB|c=P8yaASx7j{=I-j
+zT1`~3lox-6PA{<e1Emia&@Q37TVu?;X=$x7%KGUT#?b|4x5qH2+BMPw46-vz`X=gR
+oZG-ewujWJ#%ajGmSj7#jP`3*8T*XaNs8iJ~`qBukXPUSF08D_sod5s;
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl086.class out/production/JavaProgrammingB15Online/repl/Repl086.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..52ab49fde171920a5cdacad3710fe3dc6aa2c15e
+GIT binary patch
+literal 1555
+zc$|$?U3U{z6x}yplTN2CO(_&qh*BhlN}wXf7O@g66q8a(sY`jfP48-lPVU5+8*2ZF
+z`UiZLhq4x~<&#f5_+$J5)_pTsw$RaK*5rQdbI!i|oO5Sh{q^!U05z<;7{mJxE)AiA
+z85bE`F5*fNvo0>+0}Ea)qUz!ru3O_=iBUI;_}D?s!6yQRTfX+qZGmiMW?djx4>y&-
+zSi{$9rPtX|(VE-{h?E*(TL$Yg^6h>A=FGMq3yd}*)eWkTI9#jUTp-?&z7{xDdD3_)
+zpUG+<^;WfIB42MU^iPq|7UL#T%mR5|cYB7`#Mm=_P;IrP)+(}AEj#ME)sqsMvqt75
+zb-b%0fsvMx?VYCV_VqeA>tJ5MZH2w4t(JV7f;Uio)zW!5fpLNHV+T7}@Nf&CS_jq&
+z0vR28_za64KF1w_sntNqSe2DFDk^XFRBXyt%)EoThr9T~!xHWZoVXK)CN`1mHkH{9
+zH{-Da?iaD_;Q_uBn7$j9_rhLzS87u>;ebx7-J_HgeYD;rJuJn;ji;(@UW1bAybkTf
+zMs=8k?b2jYNk6PE+rrab$qtJ-RY^72{uR`BJsGfrla<DsXD`fr%gYqn4jwYEQo<qg
+zL<%h6bnPzCZ?GP{Hd=j8+LM);<8~JfG<mR?6#}O_a!1ue-InHS-)wUg8&;HpYbn$z
+zhaHC;tk@nsVvi1OzJ3<&sDVpz-jZyaFxqpl#xga+aHrR0zn1MKss}QT6-E4TRK$QI
+zxeoWG-V9Vcodl*R`?tWgy{<}ef0ELk;}mrn1TEhvCiz(4;{VbnaPGhT@GeIAX|lfz
+z-xt1E9PQVq%9*ba@|Ryg{L(j1a4aMsPIB}H>q(sAJcQGj8U+7|EOFrRugHA!9N8Dh
+zHA?wrDZf(6&*#qMN`-wmKcV&<#nR9|+}SJp7=B4YG%Ykj$Rhu^{&?^Q@maz@AN+2`
+zWcy;~Yy=z(qsT0VsNJO)59cw0OGM_F&pgpZih96^HA=L?ZzSSy24^`B)AknLru0$V
+z!#g;~RLA)-IL}p<e2XY^m1CvAh|B?@yo2`~WE@;b9^f`zr~6g9h_5)iq<e@KRvGdk
+L_eJh+@c+@@u5y37
+
+diff --git out/production/JavaProgrammingB15Online/day19/StairCase.class out/production/JavaProgrammingB15Online/day19/StairCase.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..f290216cccb14472775efc7ef95168ea87d00b81
+GIT binary patch
+literal 1129
+zc$|$>TTc@~6#k~A-BOoZk&B3c3Rpm?cm<0-*n~*3s0jogd>YzG8M@tVcBdqL)*s=s
+zFFxagCOr59{3-qf6EEMkjexGkO?J+lbH4MP%glWKe*6i*D%P{Ga500)9Mzd#T*j3w
+zu42~0oP~LT^t$%6c_fg`FYF5Rl>CYk7;v<wo;K@yD%g>GE-g97FH3h<20GHa#vZe;
+zLxCZuB3mnKg>55sP?Di4(p8t*6By0EbPnX9EV$CE5)f#wT8t72&3}_P8B|Fz90Q{>
+zG%|>C$N2h~tz6rZjdm>-t_ftf{bo>B8#=13|5r83QM8Q=dIcab_}KSNXad>TQfA+;
+zgac{hGgz>(h$RcxZQQ`Jg@TQnSm7vs>x~2_)jZofP-Sz*)G08FTevNd5Q_q1by-s-
+z-z!V=LYsZ=*p_G5^?W{NIC0IM=5K{Y)p=filZi(<XzdrC6KWWsWSs%SF=hd)5os>Z
+zWh5^1u7x|%6jlXhPrTYY^lPdM>a?*T%f=5{79Q{dIlf<OHU#WV&r?Ckm0_sZ+nduF
+zx*VN>KapO=RpD$Wu=r;oe+%4cHB=1z^wsGc$eAH_DN53Hx3y743!Kl~f7K>1^=}-X
+zQ=0E9`VzcaykcCl)C!cmZAdMCgg9!u&v8w+jY-&C?G6Ba=%?((00z6kuZT`kPUjL%
+z^5JCWEyk9PBa8DMJxd>udYusOetbD<Q$@5BB#x+(l+k-1VkP6;PthBtnxQ9!3$*7*
+yO=1k=d^>s)BN%1cv35a;Z%A1f7hf5jBt9y80{1Di#N5Ri?$LUQdWQNG|LLFAR~454
+
+diff --git out/production/JavaProgrammingB15Online/day18/DoWhileAtLeastRunOnce.class out/production/JavaProgrammingB15Online/day18/DoWhileAtLeastRunOnce.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..5f2e5a221de46d4223edcc1eef5a151561beca60
+GIT binary patch
+literal 665
+zc$|GwT~8W86g>kg3v?|Af)#3uUlo0D;~NR2Nh2DYZnY`IKJ;l=COCB2CCgy+=lB!!
+zL6bi82lz|;1wJ)x?<^$7gmjagn{)1+bI-lI_kVu=0#L(N8YW()u#8d?<uqPnC5bmC
+z-kPW|BpT9}>ODiex_!!E><3-Jka46hj>m(J2;02l5tDNQmwTr?lp0S-L!HSH!-~`8
+zmwPq48GJjFp7@{~!AI)r*gx@IQKzy2mp((W`rYaCb8dUw@7XOCO21c+n)0wmGWi*4
+z26jR3M~3;9;_i>nd^qi$ZUy7e6^BxT(#+PoTFyceDHE#}*04_3J_#|b^a2t$v0-5o
+z?-<PX(Lv?lxXDod&m;`lCx0iMzHrqus&zS1VnCY=#*`>bhLM5&g(gunkKhBECqIKG
+z2SbfK+ESr9Ye`r|f<B{uVqkhCI@5$~ij3mi&K=lwlzu^HA|m6k=(HvUn8!<sDP)kH
+zUhY$MjACga{?NEVEEm6pQBGd{ebiu%z;&de6^o>xRSdGBce()mOIcBe;zWhG97Th0
+T9*fkYFmdu5hBjG@+%5eBAX<&n
+
+diff --git out/production/JavaProgrammingB15Online/repl/Repl088.class out/production/JavaProgrammingB15Online/repl/Repl088.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..17d42586bb547839bc4b492c53b81df1658714c0
+GIT binary patch
+literal 1629
+zc${@q-%}G;6#i~@lMTs|NHEkG5Up4@AjDdzDJX5lYEuJIL!sz6?Xp?I+OSJ^?^^rr
+z^r`;<ed<GJeAb6JQ)hf``&V?vH)s0XC!y!=h7j72hjY*U&Ub#?bI#_^-QQjTDB)fL
+z$8kZyWFMwbOdx`bLcE_q0hi+VK%CP;%n0$J5SN803Gq=Jv%+sKjw=aV#e5teEBHjg
+zrwp+xmTmEQ21zTdFvtr|-DF5tEZbc2x7JN}Szm7wlBqa`-dxdLOWfO_%r`BMAyskB
+z?Pl>ViHoJu9N}BKWit$E_bU(eM|!cT+l^w4yO!OU3$o~LgZu`2n91lFIyn!9HlJI~
+zVvP{nbjg@B9N*^EjRl=k09HOgt~(;6{JrDWMYTNw_t&^?e7mS`2h}SWRd9_VQFDCP
+zFmG7mL2COAQ^H+E7DEgJ|Eoj6f{N?-Ob~9UxQWkIl<@`i(9pSxTd1g5#FC0CZmYP1
+zyDDnpdI!tIsXGl7UqZBjyFS&is^TlGF+?}?rYDN%?k2;rgQry2ADRX~1ck3V4E^A7
+zbBiG&W{?d#VL8RJz3p?NoB9?t<Am1J5KPB5A5)U!TA^1LV@=a;@XcUhsQq!nu{lkf
+zdY{+2_zRo5TQk4&P1`W%3iqhb9@ky&ty;o2tMyn6A}N+#Hy>9wj$lx}KF?qG+HW4x
+z%H^Il#!b84$<&)7IX>_1&TYaEx--}Vrs}rEt!W=o-3rcNkUmrKi-3vkA^8s7igYqM
+zqvJ2Yo(1L;Bx50n97(mUpG2O{J`7_dbdD@RCLC<@B_eCjA-#ZHk*-Sf6D>q%<(%9?
+zEcz>(&dC|2h4>DBdJ<vbrEdrMoE++j*f#;Sh2*UK6pav7caY7=Qk&AY-RguI>hf-(
+zUl^x4p~pHQP992f5Q_Aah_m<LiNwN7r=-+>OWG^#)7xoNU1|67AwbDS4!H+P7-09G
+z{S>=@@3VJbAIbh>c;pwPo+F((*22J3B!!wGRm?{U=JSYV04PWzj((a+8VMR|5~pZd
+z8X*%%VTRB}3}6)*STuZ(7(bHt&otF%G{u(`;}v=Qj#2zY3-Si<;w{FQf^+N)&a)Y4
+ztcnY48I$a56j=k8f_<0{XHK4@bW5@aI8EO4C&unmgtN3kX|{$j(j;VA4d?J4?a6uK
+io<eeuiij%E6hs(hDgc-B!{bxKXD8DN#TXAZaN=LQBweHc
+
+diff --git out/production/JavaProgrammingB15Online/day19/CharAndForLoop.class out/production/JavaProgrammingB15Online/day19/CharAndForLoop.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..f201b16796e4632aee8c2277ef00a2af90644949
+GIT binary patch
+literal 1132
+zc$|$?-A)rh6#k}^ZYhhDmLIW-MFCq7D*j`M32tmODQZ%JiQYKfPTHm0oo07R(%10H
+zYj3>93rx810ell*!5H<-whDx5oXyUebIx~uzLVMg^5f_;fcq#W5XbBYE+7-f#RM*4
+zE=7(j`gGO6f`LVb*rww->LJ5WF2BnVwPZ~&jF%lxJnOWo!r$Rlmn^BWw7I*>eMjqk
+zV^lSqfML2^<K6X*g4N*umRBoDzbs|DNd6XgJo4vWm-qNSFSy*R7b?nkyn0br8+L38
+zVPF<vxnHMT=>brNv5Mk$bDOvOg%cIo@oiCZw30qucTLBe7(v3ol8I}`F|1@)|E$Me
+z-F1RSmb>i+uL_lQg;K%~e)|pNO)O)DA^Av36)2y#w}ooRS}-2N^*B~dtf64yhQ>?|
+zqE4a5B%W9Igso1QD&0Vd7R_9C$T8Jp?8w3kqN|9s;4LDZ9$;oL+FEmItW&u`Q%ztU
+zHyI)<%P`a8O<_sT=IW)R8gvR2_f()`t^A-t4~N+e+|nHHF)SQo9B*GXMIYKrTH>~n
+ze%HVTT_hsj>=1SHspkpba(NI4s`Tz;m;D^QaX#T*%@x5yFR*yFoxcU{blYM8{N&B)
+z4ZWB@o5JF*TXB>q8hF64_+Py-%>5gOc^LGu=@kLfcaQc_(h4LQ$>HTsU<aYwq&*fI
+zhcHIF*#qDl#z~GKiHUx2m(UTCOCJ$Q4ILty+}g|}U%kf+88Sx{gG0nJ(Kl~5Km7c9
+z5N6cbr?n?+Xo8*;eeM%j#AH})nlg^kFCm3=Sa*r+Q=whgj(o=``-WLcG!r&^9(PG<
+THn-`Ia)&&ZNsp7BrFZ@pm9QAh
+
+diff --git out/production/JavaProgrammingB15Online/day19/SlowDownLoop.class out/production/JavaProgrammingB15Online/day19/SlowDownLoop.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..104fea73b62905f5fcbd230b1065d9c61b1a5318
+GIT binary patch
+literal 1554
+zc$|$?Yi}Dx6g^`*UdP!ct<$7|#$hRG>!c4;TKd3kTH+9D>a+oeAOu31*rQ~d^{m+)
+zw-~<iBlyZg>Sy{Pm5Rg<;HU5t5F(thO%fEhswL0k+;i{Td+yBs@z3+$0bIv=7DsW$
+z!P#LHFqcIF^LBMEgY#Kjz(tD`Gk7~k_7#h~o59r_1g>Oo-N6k9?+K)D`r0=O0?ESM
+zx<INNHk80v)z|8NySbsFHMtQG$yLL;4Ay1j+kGEQnJqsSI9_eY&ZQg0S`a>73Loog
+z7`95ZHl?oxCJSFwAIe9v7)ZTYteMEyn<aae@cFNhC!<Y986Q9s81i+iZD{Qo+r|%y
+zwYt<=Mb;V{8PS?lx*>3+W@LSPMYg)>ImioSYhgR8t7YG&d+cC>7i~Nj$B?7pP;3V!
+z7dLUs5*A$C#vOsvtAUcS@{~3z@;VIcb&vO?ZV+sEaZ9O&gZEu5qU>S`A25N6u19oZ
+zH3CN$!_dSglC2eGw!%g{md0`hAG)}Uii?j>ro)o@&mn_*6kdm(tQ$YnUZlQm`;lU$
+zxx<1p`o4S*HXf?F`5#p4#6~p*61FE3JvIHXSh4a_Z6%x3bE+`VV7rwJZ5#F-SJ|L_
+z$MFHMfYY+Oz#do_d<Pt@zA+VTy7#Y=MHMStiu0bpiKg6E<xtn9`OG(4Tv2UpVjHY7
+zH}I}>k7J3#b8z2^`ia2oKGD~Y!fn;(_aZM-+A!)kSmRTmjN5Gr=~nC&C<ii*6_5Mj
+zVD9}Gz5d;0=K~eb_8d!xb9#~ETBoH3&=0<VUJFZeheMQQ5Y&95N)A5dt$d~21ZG~&
+z!<!i6=fwUJ{6z3sa2)5Z$XRe6ntulIYu9|7W4Z@of}`7CPvQjUVNBt*p0l`yByr%o
+z-;ntHDU#2Ssy@X~F1-Wi+zv9g?65GM{|RR;JWP1{YHA{t{~416CQ{Fl1$Hp<eM&sp
+z{c}413+64+-6Q_EM?BIe?vnTfBbGKwnoT*`O?k0fpMw!(n4C>Bi#&IySin5pFJlyU
+zI4_fTj|$YN!IxzEoFkU@Ez7dyF0l9uT)&Q!NMU_%#WFF?h+xbXX7C0@m_i*MtqI~^
+zQR9=$<rEn+NbfSpkb}1z-d8~Z|H9PY7!#Zl4q3BZsZZl$&RIr!z<gGD)+O#oX?cg(
+I<?eXxU%+s5Y5)KL
+
+diff --git out/production/JavaProgrammingB15Online/day18/DoWhileIntro.class out/production/JavaProgrammingB15Online/day18/DoWhileIntro.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..bf3a1b661c8f5783a28918dd50714298d34dccc0
+GIT binary patch
+literal 583
+zc${re$xZ@65Pb~;10%?e3+`UPgA;Eg5HA`N5?m4t9y~QLfyP<LFc`V}8-4^HH1XgE
+z_&?r^SUr%a(Mh_h>%FRaZ~E=?<rP2~yBb2sN3n!u4J%kxQBbkQ5UvVac!vzZVyVfX
+z9623>AyF5$aW=AAhI`3dCL!s%)8=NAyF%7;Q1N<V$dIjf`1qi#A3Ik)VH!2tbDavY
+z78f={zIa{l^INW)-0tcP&lPsJ;%jlYOVgQuXa;sir^XO(c)Wdc$_H~vt>KK^ws9h4
+zk@~5)FSo=HhN@ych7D}0*ot8rJLLYaL5AeF?0Ktiw7p+YV?6W>i{8Z<5s{mD6pnsD
+z20gNAaEoka{(%|PfvimWd8Jq@HOYfQuP?s<m~==nLX}RLQ4Z}rgH3!oN-^w%L1+|X
+zvj!~C4aCN=I3MQJ9iW_wR38y2JRx|`riF*;`@|oXi}Jo|h}t4lM`?wIB(2hX&L2jC
+W5GkCXdzw~fW(GbGklwOBm-_-3Bz3z0
+
+diff --git out/production/JavaProgrammingB15Online/day18/ForLoop.class out/production/JavaProgrammingB15Online/day18/ForLoop.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..f77f684781ced3b7c0b18406c5efa1d788562b68
+GIT binary patch
+literal 615
+zc${rfO-sW-5Ph50rmd;f*2ZtGUr;?5ya|dIK@{o-RC@8WZI`;*WJBBvz57o*c-Di0
+z2Y-OS#<Pez8w(;dA@i8oH*elf-o9R50c>G4ixeg@n8Z{X(^<@5*2bKTd4|-E45Z#=
+zNL1G949Pv!5)ApO48(EQZ;0rOH#$@)R8^CA>O7Jr?-!H$LS7qoi}yCSynPi_l?u1%
+zz~?exa4YB4OMb(>4iDO1O-C|lZ<{ep(sxKa9<@oJIDp2Gt7+c6I^tn}TDGRTQB&+o
+zlQ{ih8>Z2LjkJvg2W2cWj34kY?3Eib(ih~ctX0_;HkKSLV}*48xn&srn|;!_6ixlF
+zRO?-9;nRLpmkvt5My2vj$)zT*g8SsPIH1g6hbHULCQ6k-i@+j==+BtP0yCGOn4!!g
+zWQ0TO&tMPnah75#E+#Nc(fK71<_I$wLB8KCh;0$NiJh7B9mXDE6%tQK-ZFOo{r(Uu
+r7_|bDv8GLLp0GsSM%j(~ix|aNJi{esk#IboV|~J6A5@}C#m3wpC$@gU
+
