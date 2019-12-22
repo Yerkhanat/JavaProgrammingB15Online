@@ -8,6 +8,7 @@ public class ArrayPracticeWithMethod {
     int [] scores= {2,5,8,23,4,5,6};
     arrayPrinter(scores);
     printMaxOfArray(scores);
+    sumOfArray(scores);
     }
     // array printer
     // create a method that has one int array as a parameter
@@ -33,8 +34,14 @@ public class ArrayPracticeWithMethod {
         } System.out.println("maximum number inside the array is "+max);
         System.out.println("minimum number inside the array is "+min);
         System.out.println("==========================================");
-    }
+    }public static void sumOfArray(int [] sum){
+        int total=0;
+        for (int i = 0; i <sum.length ; i++) {
+            total+=sum[i];
 
+        }
+        System.out.println("sum is "+total);
+    }
 
 
 }
