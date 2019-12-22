@@ -9,6 +9,7 @@ public class ArrayPracticeWithMethod {
     arrayPrinter(scores);
     printMaxOfArray(scores);
     sumOfArray(scores);
+    compare2arraySize(new String[]{"Yerkhanat", "Janar"},new String[]{"Janar"});
     }
     // array printer
     // create a method that has one int array as a parameter
@@ -41,7 +42,18 @@ public class ArrayPracticeWithMethod {
 
         }
         System.out.println("sum is "+total);
-    }
+        System.out.println("===============");
+    } public static void compare2arraySize (String []arr1, String[] arr2) {
+          if(arr1.length>arr2.length){
+              System.out.println("array length "+Arrays.toString(arr1) + " is larger than "+Arrays.toString(arr2));
+          }else if(arr1.length<arr2.length){
 
+              System.out.println("array length "+Arrays.toString(arr1) + " is less than "+Arrays.toString(arr2));
+          }
+
+            }
 
 }
+
+
+
