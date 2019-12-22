@@ -13,7 +13,7 @@ public class MethodWithReturnIntro {
 
         return "Yerkhanat";
     }public static int doubleTheNumber(int number){
-
+        System.out.println("I am going to double the number "+number);
         return number*2;
     }
 }
