@@ -43,6 +43,16 @@ public class PriceListPractice {
 
         }
         System.out.println("cutting price by half = " + priceList);
+
+
+        // swap first value with last value
+
+        Double temp = priceList.get(0);
+        priceList.set(0, priceList.get(priceList.size()-1));
+        priceList.set(priceList.size()-1, temp);
+        System.out.println(priceList);
+
+
         
 
 
