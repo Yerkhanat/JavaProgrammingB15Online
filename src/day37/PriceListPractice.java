@@ -18,8 +18,34 @@ public class PriceListPractice {
 
         System.out.println("Price list = "+priceList);
 
-      priceList.set(2,10.00);
+        priceList.set(2,10.00);
         System.out.println("Price list = "+priceList);
+        priceList.set(0,priceList.get(0)+4);
+        System.out.println("priceList = " + priceList);
+
+        priceList.set(priceList.size()-1, priceList.get(1)+priceList.get(2));
+        System.out.println(priceList);
+
+        for (int i = 0; i <priceList.size() ; i++) {
+            
+            priceList.set(i,priceList.get(i)*2);
+            
+            
+        }
+        System.out.println("priceList = " + priceList);
+
+        for (int i = 0; i <priceList.size() ; i++) {
+
+            if(priceList.get(i)>=20){
+                priceList.set(i,priceList.get(i)/2);
+
+            }
+
+        }
+        System.out.println("cutting price by half = " + priceList);
+        
+
+
 
 
 
