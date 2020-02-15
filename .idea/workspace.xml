@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da574ce6-7eb9-408a-9d01-22dd99978fd3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaProgrammingB15Online.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaProgrammingB15Online.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day38/ArrayListBulkOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day38/ArrayListBulkOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day38/ArrayListPractice_ShortWay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day38/ArrayListPractice_ShortWay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day38/RemoveAllMethodPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProgrammingB15Online/day38/RemoveAllMethodPractice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day38/ArrayListBulkOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day38/ArrayListBulkOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day38/ArrayListPractice_ShortWay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day38/ArrayListPractice_ShortWay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day38/ListObjectEqualityCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day38/ListObjectEqualityCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day38/RemoveAllMethodPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day38/RemoveAllMethodPractice.java" afterDir="false" />
-    </list>
+    <list default="true" id="da574ce6-7eb9-408a-9d01-22dd99978fd3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -418,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578534753635</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Day 38 - ArrayListPractice :Retain">
+      <created>1581800560771</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1581800560771</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -721,9 +718,10 @@
     </state>
     <state x="128" y="0" key="SettingsEditor/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1577641318781" />
     <state x="1472" y="0" key="SettingsEditor/0.0.1280.745/1280.0.1920.1080@1280.0.1920.1080" timestamp="1575699082060" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1578534756480">
-      <screen x="0" y="0" width="1280" height="745" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1581800633766">
+      <screen x="0" y="0" width="1280" height="744" />
     </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581800633766" />
     <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1578534756480" />
     <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1577574053607" />
     <state x="296" y="201" key="com.intellij.ide.util.TipDialog" timestamp="1581477835902">
