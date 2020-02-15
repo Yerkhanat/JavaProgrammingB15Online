@@ -34,5 +34,6 @@ public class ArrayListPractice_ShortWay {
 
 
 
+
     }
 }

@@ -13,5 +13,6 @@ public class ListObjectEqualityCheck {
         System.out.println("nums2.equals(nums1) = " + nums2.equals(nums1));
         System.out.println("nums1.equals(nums3) = " + nums1.equals(nums3));
 
+
     }
 }

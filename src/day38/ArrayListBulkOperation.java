@@ -3,6 +3,7 @@ package day38;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListBulkOperation {
@@ -24,5 +25,9 @@ public class ArrayListBulkOperation {
         nums.addAll(Arrays.asList(100,200,300,400));
 
         System.out.println("Final "+nums);
+
+        System.out.println(nums2+" "+ nums2);
+        System.out.println(Collections.nCopies(2,nums2));
+
     }
 }
