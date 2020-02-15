@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da574ce6-7eb9-408a-9d01-22dd99978fd3" name="Default Changelist" comment="" />
+    <list default="true" id="da574ce6-7eb9-408a-9d01-22dd99978fd3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,13 +73,13 @@
       <recent name="day52.polymorphism" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.General">
-    <configuration name="Booktest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="repl.Booktest" />
+  <component name="RunManager" selected="Application.DangerZone">
+    <configuration name="CheckAndUnchecked2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day59.CheckAndUnchecked2" />
       <module name="JavaProgrammingB15Online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="repl.*" />
+          <option name="PATTERN" value="day59.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,8 +87,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExceptionPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day59.ExceptionPractice" />
+    <configuration name="CheckedAndUnchecked" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day59.CheckedAndUnchecked" />
+      <module name="JavaProgrammingB15Online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day59.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DangerZone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day59.DangerZone" />
       <module name="JavaProgrammingB15Online" />
       <extension name="coverage">
         <pattern>
@@ -111,25 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OutOfMemoryDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day57.exceptions2.OutOfMemoryDemo" />
+    <configuration name="ThrowingExceptionProgrammatically" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day59.ThrowingExceptionProgrammatically" />
       <module name="JavaProgrammingB15Online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day57.exceptions2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="zoo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="repl.zoo" />
-      <module name="JavaProgrammingB15Online" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="repl.*" />
+          <option name="PATTERN" value="day59.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,19 +140,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.zoo" />
-      <item itemvalue="Application.OutOfMemoryDemo" />
-      <item itemvalue="Application.Booktest" />
-      <item itemvalue="Application.ExceptionPractice" />
       <item itemvalue="Application.General" />
+      <item itemvalue="Application.ThrowingExceptionProgrammatically" />
+      <item itemvalue="Application.CheckedAndUnchecked" />
+      <item itemvalue="Application.CheckAndUnchecked2" />
+      <item itemvalue="Application.DangerZone" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DangerZone" />
+        <item itemvalue="Application.CheckAndUnchecked2" />
+        <item itemvalue="Application.CheckedAndUnchecked" />
+        <item itemvalue="Application.ThrowingExceptionProgrammatically" />
         <item itemvalue="Application.General" />
-        <item itemvalue="Application.ExceptionPractice" />
-        <item itemvalue="Application.Booktest" />
-        <item itemvalue="Application.OutOfMemoryDemo" />
-        <item itemvalue="Application.zoo" />
       </list>
     </recent_temporary>
   </component>
@@ -415,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581800560771</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Day 38 - ArrayListPractice :Retain">
+      <created>1581800667585</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1581800667585</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -488,13 +497,14 @@
       <screen x="0" y="0" width="1280" height="745" />
     </state>
     <state x="350" y="270" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1579460439989" />
-    <state x="198" y="0" key="CommitChangelistDialog2" timestamp="1581800559604">
-      <screen x="0" y="0" width="1280" height="744" />
+    <state x="198" y="23" width="829" height="721" key="CommitChangelistDialog2" timestamp="1581800666990">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="198" y="0" key="CommitChangelistDialog2/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581800559604" />
     <state x="198" y="0" key="CommitChangelistDialog2/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1578534753389" />
     <state x="198" y="0" key="CommitChangelistDialog2/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1577574049452" />
     <state x="297" y="0" key="CommitChangelistDialog2/0.0.1920.1025@0.0.1920.1025" timestamp="1575738894499" />
+    <state x="198" y="23" width="829" height="721" key="CommitChangelistDialog2/0.23.1280.721/1280.23.1920.1057@0.23.1280.721" timestamp="1581800666990" />
     <state x="128" y="91" key="DiffContextDialog" timestamp="1577655653327">
       <screen x="0" y="0" width="1280" height="745" />
     </state>
@@ -507,12 +517,12 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="456" y="300" key="Github.ShareDialog/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1575740516805" />
-    <state width="1238" height="203" key="GridCell.Tab.0.bottom" timestamp="1581800096650">
+    <state width="1238" height="203" key="GridCell.Tab.0.bottom" timestamp="1581806009791">
       <screen x="0" y="0" width="1280" height="744" />
     </state>
     <state width="1238" height="233" key="GridCell.Tab.0.bottom/0.0.1280.744/-2560.-580.2560.1417@0.0.1280.744" timestamp="1580078648220" />
     <state width="1238" height="233" key="GridCell.Tab.0.bottom/0.0.1280.744/-2560.-603.2560.1440@0.0.1280.744" timestamp="1580078025440" />
-    <state width="1238" height="203" key="GridCell.Tab.0.bottom/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581800096650" />
+    <state width="1238" height="203" key="GridCell.Tab.0.bottom/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581806009791" />
     <state width="1878" height="233" key="GridCell.Tab.0.bottom/0.0.1280.744/1280.0.1920.1080@1280.0.1920.1080" timestamp="1580357418874" />
     <state width="1238" height="233" key="GridCell.Tab.0.bottom/0.0.1280.744/1280.0.2560.1440@0.0.1280.744" timestamp="1580064994384" />
     <state width="1238" height="233" key="GridCell.Tab.0.bottom/0.0.1280.744/1280.23.1920.1057@0.0.1280.744" timestamp="1580348923999" />
@@ -537,12 +547,12 @@
     <state width="1238" height="225" key="GridCell.Tab.0.bottom/0.23.1280.722@0.23.1280.722" timestamp="1579323481950" />
     <state width="1878" height="280" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.0.1920.1025@1280.0.1920.1025" timestamp="1576556652870" />
     <state width="1238" height="225" key="GridCell.Tab.0.bottom/0.23.1920.1002@0.23.1920.1002" timestamp="1577177828868" />
-    <state width="1238" height="203" key="GridCell.Tab.0.center" timestamp="1581800096647">
+    <state width="1238" height="203" key="GridCell.Tab.0.center" timestamp="1581806009787">
       <screen x="0" y="0" width="1280" height="744" />
     </state>
     <state width="1238" height="233" key="GridCell.Tab.0.center/0.0.1280.744/-2560.-580.2560.1417@0.0.1280.744" timestamp="1580078648219" />
     <state width="1238" height="233" key="GridCell.Tab.0.center/0.0.1280.744/-2560.-603.2560.1440@0.0.1280.744" timestamp="1580078025436" />
-    <state width="1238" height="203" key="GridCell.Tab.0.center/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581800096647" />
+    <state width="1238" height="203" key="GridCell.Tab.0.center/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581806009787" />
     <state width="1878" height="233" key="GridCell.Tab.0.center/0.0.1280.744/1280.0.1920.1080@1280.0.1920.1080" timestamp="1580357418872" />
     <state width="1238" height="233" key="GridCell.Tab.0.center/0.0.1280.744/1280.0.2560.1440@0.0.1280.744" timestamp="1580064994379" />
     <state width="1238" height="233" key="GridCell.Tab.0.center/0.0.1280.744/1280.23.1920.1057@0.0.1280.744" timestamp="1580348923995" />
@@ -568,12 +578,12 @@
     <state width="1238" height="225" key="GridCell.Tab.0.center/0.23.1280.722@0.23.1280.722" timestamp="1579323481950" />
     <state width="1878" height="280" key="GridCell.Tab.0.center/0.23.1280.777/1280.0.1920.1025@1280.0.1920.1025" timestamp="1576556652868" />
     <state width="1238" height="225" key="GridCell.Tab.0.center/0.23.1920.1002@0.23.1920.1002" timestamp="1577177828866" />
-    <state width="1238" height="203" key="GridCell.Tab.0.left" timestamp="1581800096645">
+    <state width="1238" height="203" key="GridCell.Tab.0.left" timestamp="1581806009783">
       <screen x="0" y="0" width="1280" height="744" />
     </state>
     <state width="1238" height="233" key="GridCell.Tab.0.left/0.0.1280.744/-2560.-580.2560.1417@0.0.1280.744" timestamp="1580078648218" />
     <state width="1238" height="233" key="GridCell.Tab.0.left/0.0.1280.744/-2560.-603.2560.1440@0.0.1280.744" timestamp="1580078025435" />
-    <state width="1238" height="203" key="GridCell.Tab.0.left/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581800096645" />
+    <state width="1238" height="203" key="GridCell.Tab.0.left/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581806009782" />
     <state width="1878" height="233" key="GridCell.Tab.0.left/0.0.1280.744/1280.0.1920.1080@1280.0.1920.1080" timestamp="1580357418870" />
     <state width="1238" height="233" key="GridCell.Tab.0.left/0.0.1280.744/1280.0.2560.1440@0.0.1280.744" timestamp="1580064994376" />
     <state width="1238" height="233" key="GridCell.Tab.0.left/0.0.1280.744/1280.23.1920.1057@0.0.1280.744" timestamp="1580348923994" />
@@ -599,12 +609,12 @@
     <state width="1238" height="225" key="GridCell.Tab.0.left/0.23.1280.722@0.23.1280.722" timestamp="1579323481949" />
     <state width="1878" height="280" key="GridCell.Tab.0.left/0.23.1280.777/1280.0.1920.1025@1280.0.1920.1025" timestamp="1576556652867" />
     <state width="1238" height="225" key="GridCell.Tab.0.left/0.23.1920.1002@0.23.1920.1002" timestamp="1577177828866" />
-    <state width="1238" height="203" key="GridCell.Tab.0.right" timestamp="1581800096648">
+    <state width="1238" height="203" key="GridCell.Tab.0.right" timestamp="1581806009790">
       <screen x="0" y="0" width="1280" height="744" />
     </state>
     <state width="1238" height="233" key="GridCell.Tab.0.right/0.0.1280.744/-2560.-580.2560.1417@0.0.1280.744" timestamp="1580078648219" />
     <state width="1238" height="233" key="GridCell.Tab.0.right/0.0.1280.744/-2560.-603.2560.1440@0.0.1280.744" timestamp="1580078025438" />
-    <state width="1238" height="203" key="GridCell.Tab.0.right/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581800096648" />
+    <state width="1238" height="203" key="GridCell.Tab.0.right/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581806009790" />
     <state width="1878" height="233" key="GridCell.Tab.0.right/0.0.1280.744/1280.0.1920.1080@1280.0.1920.1080" timestamp="1580357418873" />
     <state width="1238" height="233" key="GridCell.Tab.0.right/0.0.1280.744/1280.0.2560.1440@0.0.1280.744" timestamp="1580064994381" />
     <state width="1238" height="233" key="GridCell.Tab.0.right/0.0.1280.744/1280.23.1920.1057@0.0.1280.744" timestamp="1580348923997" />
@@ -770,10 +780,10 @@
       <screen x="0" y="0" width="1280" height="745" />
     </state>
     <state x="305" y="185" key="run.anything.popup/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1576963022368" />
-    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup" timestamp="1581194288734">
+    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup" timestamp="1581803692728">
       <screen x="0" y="0" width="1280" height="744" />
     </state>
-    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581194288734" />
+    <state x="305" y="115" width="670" height="630" key="search.everywhere.popup/0.0.1280.744/1280.0.1920.1080@0.0.1280.744" timestamp="1581803692728" />
     <state x="305" y="115" width="670" height="630" key="search.everywhere.popup/0.0.1280.745/1280.0.1920.1080@0.0.1280.745" timestamp="1579747042871" />
     <state x="305" y="115" width="670" height="630" key="search.everywhere.popup/0.0.1280.745@0.0.1280.745" timestamp="1578448702453" />
     <state x="305" y="123" width="670" height="677" key="search.everywhere.popup/0.0.1280.800/1280.0.1920.1025@0.0.1280.800" timestamp="1579381286397" />
