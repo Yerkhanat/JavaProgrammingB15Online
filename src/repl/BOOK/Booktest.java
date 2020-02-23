@@ -1,4 +1,9 @@
-package repl;
+package repl.BOOK;
+
+import repl.BOOK.Book;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class Booktest {
     public static void main(String[] args) {
@@ -21,10 +26,16 @@ public class Booktest {
 //        }
 //        System.out.println(word);
 
-        Book b1 = new Book(10,"YerhDn DHd","The trump birdene",12);
-         b1.setTitle("MaruF The cool");
-        System.out.println(b1.getTitle());
-        System.out.println(b1);
+        //Book b1 = new Book(10,"YerhDn DHd","The trump birdene",12);
+         //b1.setTitle("MaruF The cool");
+        //System.out.println(b1.getTitle());
+       // System.out.println(b1);
+       // System.out.println(Shelf.isShelfEmpty());
+
+        System.out.println(Shelf.addBook(100,"j.K. rowLing","harry potter",556));
+
+        int [] test1 = {12,13,12,33,12,12};
+
 
 
 

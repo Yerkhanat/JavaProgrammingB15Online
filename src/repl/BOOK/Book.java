@@ -1,4 +1,4 @@
-package repl;
+package repl.BOOK;
 
 import java.util.Arrays;
 import java.util.List;
@@ -107,16 +107,18 @@ public class Book {
          *  b.setAuthor("") => assigns "Unknown" to this.author and unknownAuthors++
          */
         public void setAuthor(String author) {
-            if(author.equals("")){
+            String [] result = author.split(" ");
+            if(author.isEmpty()){
                 this.author="Unknown";
                 unknownAuthors++;
                 //System.out.println(author);
             }else {
-                char firstLetter = Character.toUpperCase(author.charAt(0));
-                char secondLetter = Character.toUpperCase(author.charAt(author.indexOf(" ")+1));
-                String result = author.toLowerCase();
-                this.author = firstLetter +result.substring(1,result.indexOf(" "))+" "+secondLetter+result.substring(result.indexOf(" ")+2);
-                //System.out.println(this.author);
+                for (String each: result
+                     ) {
+                   //
+
+                }
+
             }
 
 
